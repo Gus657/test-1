@@ -1,6 +1,6 @@
 {
   "name": "material-v2",
-  "version": "2.0.17",
+  "version": "2.0.18",
   "description": "",
   "main": "dist/material-v2.ssr.js",
   "browser": "dist/material-v2.esm.js",
