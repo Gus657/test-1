@@ -1,0 +1,218 @@
+@import '../../core/stylesheets/custom.scss';
+@import "../../core/stylesheets/utils.scss";
+@import '../../core/stylesheets/variables';
+
+$minimum-available-height: 400px;
+
+.tdl-candidate-bar {
+  width: 100%;
+  height: 88px;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  box-shadow: 0px -2px 2px 0px $black-opacity-20;
+
+  @media screen and(max-height: $minimum-available-height) {
+    display: none;
+  }
+
+  &--has-bottom-bar {
+    @media screen and(max-width: $max-width) {
+      bottom: 56px;
+    }
+  }
+
+  &__list {
+    max-width: 350px;
+    padding-bottom: 4px;
+  }
+
+  .rank {
+    display: flex;
+    min-width: fit-content;
+    min-width: -moz-fit-content;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 8px;
+    cursor: pointer;
+
+    &__positions {
+      margin-bottom: 4px;
+      text-decoration: underline;
+    }
+
+    &__finish {
+      margin-top: 2px;
+    }
+  }
+
+  .rank-progress {
+    display: flex;
+    justify-content: space-around;
+    min-height: 22px;
+
+    &__bar {
+      position: relative;
+      top: 9px;
+      width: calc(100% - 84px);
+      height: 4px;
+      background-color: $black-opacity-26;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 1px;
+        width: calc(var(--rank-progress) - 2px);
+        height: 4px;
+        background-color: $black-opacity-54;
+        transition: width 1s;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      top: -10px;
+      left: calc(var(--rank-progress) - 8px);
+      @include icon-size(22px);
+      transform: rotate(90deg) translateX(1px) translateY(4px);
+      transition: left 1s;
+    }
+  }
+
+  &--has-applications {
+    .tdl-candidate-bar__completion-container, .tdl-candidate-bar__list-container {
+      transform: translateY(-8px);
+    }
+  }
+
+  &__completion-container, &__list-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .completion {
+    height: 22px;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 16px;
+
+    &__steps {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 1px;
+        width: calc(100% - 2px);
+        height: 4px;
+        background-color: $black-opacity-26;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 1px;
+        width: calc(var(--completion) - 2px);
+        height: 4px;
+        background-color: $black-opacity-54;
+        transition: width 1s;
+      }
+    }
+
+    &__step {
+      position: relative;
+      width: 22px;
+      min-width: 22px;
+      height: 22px;
+      min-height: 22px;
+      padding-top: 4px;
+      z-index: 1;
+      text-align: center;
+      color: $white-opacity-87;
+      clip-path: $hexagon-path;
+      -webkit-clip-path: $hexagon-path;
+
+      &--locked {
+        color: $white-opacity-87;
+      }
+
+      &--is-ios {
+        padding-top: 3px;
+        padding-left: 1px;
+      }
+    }
+
+    &__icon {
+      @include icon-size(12px);
+      transform: translateY(-1px);
+    }
+
+    &__genome, &__ranking-criteria {
+      display: block;
+      width: 100%;
+      margin-top: 8px;
+      text-align: center;
+
+      &--link {
+        text-transform: uppercase;
+        text-decoration: underline !important;
+      }
+    }
+
+    &__animation {
+      @keyframes increase-opacity {
+        75% {
+          opacity: 1;
+        }
+      }
+
+      position: absolute;
+      left: calc(var(--animation-left) - 10px);
+      top: -9px;
+      width: 40px;
+      height: 40px;
+      background-image: url('https://s3-us-west-2.amazonaws.com/bio-media/static/fireworks.svg');
+      opacity: 0;
+
+      &--active {
+        animation: increase-opacity 2s;
+      }
+    }
+
+    &__t-rex {
+      position: absolute;
+      left: calc(var(--completion) - 10px);
+      width: 20px;
+      height: 22px;
+      background-image: url('https://s3-us-west-2.amazonaws.com/bio-media/static/t-rex.svg');
+      z-index: 1;
+      opacity: 1;
+      transition: left 1s, opacity 1s;
+
+      &--hidden {
+        opacity: 0;
+      }
+    }
+  }
+
+  .md-menu {
+    height: 24px !important;
+    padding: 0 !important;
+  }
+
+  .md-select-value {
+    font-size: 12px !important;
+    height: 24px !important;
+  }
+
+  @media screen and(max-height: $minimum-available-height) {
+    display: none;
+  }
+}

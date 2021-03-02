@@ -1,0 +1,42 @@
+.THEME_NAME {
+  :not(input):not(textarea)::selection {
+    background-color: #{'ACCENT-PRIMARY'};
+    color: #{'TEXT-ACCENT_TITLE'};
+  }
+
+  a:not(.md-button) {
+    color: #{'ACCENT-SECONDARY'};
+  }
+}
+
+body.THEME_NAME {
+  background-color: #{'BACKGROUND-ELEVATION_0'};
+  color: #{'TEXT-TITLE'};
+}
+
+/* Typography */
+
+.THEME_NAME {
+  .md-caption,
+  .md-display-1,
+  .md-display-2,
+  .md-display-3,
+  .md-display-4,
+  .md-label{
+    color: #{'TEXT-DEFAULT'};
+  }
+
+  .md-headline,
+  .md-title,
+  .md-subheading,
+  .md-subheading-1,
+  .md-subheading-2,
+  .md-body-1,
+  .md-body-2{
+    color: #{'TEXT-TITLE'};
+  }
+  code:not(.hljs) {
+    background-color: #{'ACCENT-WARN-0.15'};
+    color: #{'ACCENT-WARN'};
+  }
+}

@@ -1,0 +1,82 @@
+.typeahead-dialog {
+  display: flex;
+  flex-grow: 1;
+
+  &__input-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 110;
+
+    &--open {
+      display: block;
+    }
+  }
+
+  &__search-actions {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 64px;
+    padding: 0 24px 0 6px;
+  }
+
+  &__search-actions-close {
+    margin: 0 !important;
+  }
+
+  &__search-actions-input {
+    flex-grow: 1;
+  }
+
+  &__search-actions-input-container--embed {
+    flex-wrap: wrap;
+  }
+
+  &__input-container-chip {
+    margin-right: 8px;
+    margin-bottom: 4px;
+  }
+
+  &__input-container-box {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  &__results {
+    max-height: calc(var(--vh, 1vh) * 100 - 64px);
+    display: flex;
+    flex-direction: column;
+
+    .results__result {
+      &--top {
+        order: -1;
+      }
+
+      &--bottom {
+        flex: 1;
+        display: flex;
+        bottom: 0;
+        order: 1;
+        z-index: 4;
+      }
+    }
+  }
+
+  &__results-list {
+    flex: 2;
+    overflow-y: scroll;
+  }
+
+  &__results-subtitle {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    z-index: 1;
+  }
+}

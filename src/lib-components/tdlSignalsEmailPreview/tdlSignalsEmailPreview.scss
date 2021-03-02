@@ -1,0 +1,49 @@
+@import "../../core/stylesheets/custom.scss";
+@import "../../core/stylesheets/mixins.scss";
+@import "../../core/stylesheets/variables.scss";
+
+.tdl-signals-email-preview {
+  .preview {
+    display: block;
+    width: 80%;
+    padding: 8px 8px 32px;
+    margin: 64px auto;
+    @include boxShadow(8px 8px 8px 0 $black-opacity-24);
+    @include transform(skew(0, 6deg));
+    user-select: none;
+    cursor: default;
+    pointer-events: none;
+    overflow: hidden;
+    text-align: center;
+
+    &__avatar {
+      margin: 0 auto 24px;
+    }
+
+    &__paragraph {
+      display: block;
+    }
+
+    &__signaler {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      display: block;
+    }
+
+    &__signaler-headline {
+      margin: 6px auto 8px;
+    }
+
+    &__signal-state-explanation {
+      margin: 0 auto 32px;
+    }
+
+    &__call-to-action {
+      align-self: center;
+      width: 100%;
+      min-width:94px;
+      max-width: 200px;
+    }
+  }
+}

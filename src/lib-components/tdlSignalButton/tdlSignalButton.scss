@@ -1,0 +1,143 @@
+@import "../../core/stylesheets/custom.scss";
+@import "../../core/stylesheets/variables.scss";
+
+$menu-container-width: 40px;
+
+.tdl-menu-signal-content {
+  &__menu {
+    margin-left: -27px !important;
+  }
+}
+
+.tdl-signal-button {
+  position: relative;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 120px !important;
+  height: fit-content;
+  margin: 6px 8px;
+
+  &:not(&--simple) {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+
+  .md-button {
+    position: unset !important;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 1px 5px $black-opacity-20, 0 2px 2px $black-opacity-14, 0 3px 1px -2px $black-opacity-12 !important;
+
+    &:hover {
+      &:not([disabled]) {
+        &.md-raised {
+          background-color: unset;
+        }
+      }
+    }
+  }
+
+  .md-ink-ripple {
+    z-index: 2;
+  }
+
+  &__menu-container {
+    position: relative;
+    width: $menu-container-width;
+    padding: 0;
+    margin-left: 0;
+    min-width: 0 !important;
+  }
+
+  &__menu {
+    margin-left: 5px;
+    border-radius: 2px;
+  }
+
+  &__menu-icon {
+    padding-bottom: 2px;
+  }
+
+  &__signal-button {
+    transition: unset;
+
+    &:not(&--simple) {
+      width: calc(100% - #{$menu-container-width});
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    &--simple {
+      min-width: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &__trigger-icon {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 15px;
+
+    &:before {
+      font-size: 22px;
+    }
+  }
+
+  &__menu-item {
+    .md-list-item-container {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: center !important;
+      min-width: 180px;
+    }
+
+    &--about-signals {
+      .tdl-signal-button__link {
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding: 0 16px;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none !important;
+        pointer-events: none;
+      }
+
+      .md-button {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  &__menu-title {
+    margin-bottom: 12px;
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+}
+
+.md-list-item {
+  .tdl-signal-button__menu-icon {
+    margin-right: 10px;
+  }
+}
+
+.tdl-signal-button__tooltip {
+  width: 220px;
+  height: auto !important;
+  white-space: normal !important;
+  text-align: center;
+  padding: 8px;
+  font-size: 12px;
+
+  &--items {
+    margin: 16px 0;
+  }
+}
+
+// fixed width
+.tdl-signal-button.tdl-signal-button--fixed-width {
+  width: auto;
+}

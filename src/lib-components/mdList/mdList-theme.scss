@@ -1,0 +1,88 @@
+.THEME_NAME {
+  &.md-list {
+    background-color: #{'BACKGROUND-ELEVATION_1'};
+    color: #{'TEXT-TITLE'};
+
+    &.md-transparent {
+      background-color: transparent;
+      color: inherit;
+    }
+
+    .md-list-item {
+      .router-link-active.md-list-item-container {
+        color: #{'ACCENT-PRIMARY'};
+
+        > .md-icon {
+          color: #{'ACCENT-PRIMARY'};
+        }
+      }
+
+      &.md-primary {
+        .md-list-item-container {
+          color: #{'ACCENT-PRIMARY'};
+
+          > .md-icon {
+            color: #{'ACCENT-PRIMARY'};
+          }
+        }
+      }
+
+      &.md-accent {
+        .md-list-item-container {
+          color: #{'ACCENT-SECONDARY'};
+
+          > .md-icon {
+            color: #{'ACCENT-SECONDARY'};
+          }
+        }
+      }
+
+      &.md-warn {
+        .md-list-item-container {
+          color: #{'ACCENT-WARN'};
+
+          > .md-icon {
+            color: #{'ACCENT-WARN'};
+          }
+        }
+      }
+
+      :not(.md-delete) > .md-icon:not(.md-primary):not(.md-accent):not(.md-warn) {
+        color: #{'TEXT-DEFAULT'};
+      }
+
+      &[disabled] {
+        color: #{'TEXT-DISABLED'};
+      }
+    }
+
+    .md-list-item-expand {
+      .md-list-item-container {
+        background-color: #{'BACKGROUND-ELEVATION_1'};
+
+        &:hover,
+        &:focus {
+          background-color: #{'TEXT-DISABLED'};
+        }
+      }
+
+      &.md-active {
+        &:before,
+        &:after {
+          background-color: #{'BACKGROUND-INVERTED-0.12'};
+        }
+      }
+    }
+  }
+
+  .md-list-text-container {
+    > :nth-child(2),
+    > :nth-child(3) {
+      color: #{'TEXT-DEFAULT'};
+    }
+
+    > :nth-child(2):not(:last-child) {
+      color: #{'TEXT-TITLE'};
+    }
+  }
+}

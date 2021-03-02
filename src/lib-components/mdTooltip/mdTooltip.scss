@@ -1,0 +1,71 @@
+@import '../../core/stylesheets/variables.scss';
+
+.md-tooltip {
+  height: fit-content;
+  padding: 2px 8px;
+  position: fixed;
+  z-index: 200;
+  pointer-events: none;
+  border-radius: 2px;
+  opacity: 0;
+  transform-origin: center top;
+  transition: $swift-ease-out;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  font-family: $font-muli;
+  font-weight: 600 !important;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: none;
+  white-space: nowrap;
+
+  &.md-active {
+    opacity: 1;
+    transition: $swift-ease-in;
+    transition-duration: 0.3s;
+  }
+
+  &:not(.md-active) {
+    transition-delay: 0s !important;
+  }
+
+  &.md-transition-off {
+    transition: none !important;
+  }
+
+  &.md-tooltip-top {
+    margin-top: -14px;
+    transform: translate(-50%, 8px);
+
+    &.md-active {
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &.md-tooltip-right {
+    margin-left: 14px;
+    transform: translate(-8px, 50%);
+
+    &.md-active {
+      transform: translate(0, 50%);
+    }
+  }
+
+  &.md-tooltip-bottom {
+    margin-top: 14px;
+    transform: translate(-50%, -8px);
+
+    &.md-active {
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &.md-tooltip-left {
+    margin-left: -14px;
+    transform: translate(8px, 50%);
+
+    &.md-active {
+      transform: translate(0, 50%);
+    }
+  }
+}

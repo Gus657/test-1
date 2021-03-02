@@ -1,0 +1,25 @@
+.THEME_NAME {
+  &.md-select {
+    &:after {
+      color: #{'TEXT-DEFAULT'};
+    }
+
+    &.md-disabled {
+      label,
+      span,
+      input,
+      textarea {
+        color: #{'TEXT-DISABLED'};
+      }
+    }
+  }
+
+  &.md-select-content {
+    .md-menu-item {
+      &.md-selected,
+      &.md-checked {
+        color: #{'ACCENT-PRIMARY'};
+      }
+    }
+  }
+}

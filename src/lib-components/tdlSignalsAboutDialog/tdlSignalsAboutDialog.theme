@@ -1,0 +1,8 @@
+.THEME_NAME {
+  &.signals-dialog {
+    .top-actions-toolbar {
+      background-color: #{'BACKGROUND-ELEVATION_2'};
+      color: #{'TEXT-DEFAULT'};
+    }
+  }
+}

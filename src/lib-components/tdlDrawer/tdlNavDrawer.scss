@@ -1,0 +1,162 @@
+@import '../../core/stylesheets/custom.scss';
+@import '../../core/stylesheets/variables.scss';
+@import '../../core/stylesheets/themeMixin.scss';
+
+.tdl-drawer {
+  .tdl-brand-logo .logo-svg {
+    width: 78px;
+  }
+
+  header {
+    .md-layout {
+      width: 100%;
+    }
+
+    .md-toolbar {
+      margin-left: 0;
+      padding-left: $tdl-default-sidenav-margin;
+      opacity: 0.9;
+      background-color: #{getBackgroundColor($theme: var(--theme), $type: "elevation_2")};
+    }
+
+    .tdl-avatar {
+      margin-left: $tdl-default-sidenav-margin;
+      padding-top: 26px;
+      padding-bottom: 12px;
+      margin-bottom: 6px;
+      color: #{getTextColor($theme: var(--theme), $type: "title")};
+
+      .tdl-user-name {
+        font-size: 16px;
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+
+      .tdl-placeholder {
+        border-radius: 50%;
+        height: $tdl-img-avatar-height;
+        margin-bottom: 16px;
+      }
+
+      .tdl-signin {
+        display: block;
+        margin-top: 58px;
+      }
+    }
+
+    .tdl-primary-actions-container {
+      margin-top: 8px;
+
+      .md-primary {
+        font-weight: 400;
+
+        &:first-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  a:not(.md-button) {
+    &:hover {
+      color: #{getTextColor($theme: var(--theme), $type: "title")};
+    }
+  }
+
+  .md-sidenav-content {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+  }
+
+  .tdl-drawer-options {
+    box-shadow: 0 -2px 2px $black-opacity-12;
+    flex-wrap: nowrap;
+
+    .md-list {
+      background-color: #{getBackgroundColor($theme: var(--theme), $type: "elevation_2")};
+    }
+
+    ul {
+      padding-top: 0;
+      li {
+        cursor: pointer;
+        color: #{getTextColor($theme: var(--theme), $type: "title")};
+
+        &:hover {
+          color: #{getAccentColor($theme: var(--theme), $type: "primary")};
+          background-color: #{getBackgroundColor($theme: var(--theme), $type: "inverted", $opacity: 0.4)};
+        }
+
+        .md-list-item-container {
+          min-height: 48px;
+          justify-content: flex-start;
+        }
+
+        .md-button {
+          transition: none;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+
+        .option__logo {
+          height: 24px;
+        }
+
+        .option__logotype {
+          margin-left: 34px;
+        }
+
+        .option__text {
+          position: absolute;
+          right: 0;
+          width: calc(100% - 72px);
+        }
+      }
+    }
+  }
+
+  .md-toolbar {
+    img.tdl-brand-logo {
+      height: $tdl-drawer-brand-logo-height;
+    }
+  }
+
+  footer {
+    background-color: #{getBackgroundColor($theme: var(--theme), $type: "elevation_2")};
+    color: #{getTextColor($theme: var(--theme), $type: "title")};
+    padding-left: $tdl-default-sidenav-margin;
+    padding-bottom: 26px;
+
+    .tdl-footer-links {
+      a:not(.md-button) {
+        color: #{getAccentColor($theme: var(--theme), $type: "primary")};
+
+        &:hover {
+          color: #{getThemeColor($theme: var(--theme))};
+        }
+      }
+    }
+  }
+
+  .tdl-spacer {
+    flex-grow: 1;
+    background-color: #{getBackgroundColor($theme: var(--theme), $type: "elevation_2")};
+  }
+
+  .tdl-divider {
+    width: calc(100% + #{2 * $md-default-margin});
+    margin: 0 -$md-default-margin 0 -$md-default-margin;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 1px solid #{getTextColor($theme: var(--theme), $type: "disabled")};
+  }
+
+  // Hack: Fix when screen expands vertically
+  .md-menu-backdrop {
+    position: fixed;
+  }
+}

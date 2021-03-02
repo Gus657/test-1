@@ -1,0 +1,37 @@
+.THEME_NAME {
+  .preview {
+    background-color: #{'BACKGROUND-ELEVATION_2'};
+    border-color: #{'BACKGROUND-ELEVATION_3'};
+
+    &-input {
+      &--select {
+        color: #{'TEXT-DEFAULT'};
+
+        &:after {
+          color: #{'TEXT-DEFAULT'};
+        }
+      }
+
+      &--selected {
+        color: #{'TEXT-TITLE'};
+      }
+    }
+
+    .md-button {
+      &.md-raised {
+        background-color: #{'ACCENT-PRIMARY'};
+        color: #{'TEXT-ACCENT_TITLE'};
+      }
+    }
+
+    .radio-group {
+      &__option {
+        color: #{'TEXT-DEFAULT'} !important;
+      }
+
+      .radio-group__option {
+        color: #{'TEXT-TITLE'};
+      }
+    }
+  }
+}

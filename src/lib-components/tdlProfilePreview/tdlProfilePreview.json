@@ -1,0 +1,24 @@
+{
+  "en": {
+    "Preview": "Preview",
+    "Hello, my name is": "Hello, my name is",
+    "signalers": "signalers",
+    "recommendation weight": "recommendation weight",
+    "RECOMMEND": "RECOMMEND",
+    "MESSAGE": "MESSAGE",
+    "Signals": "Signals",
+    "Are a new way of networking. Let": "Are a new way of networking. Let",
+    "know that you may consider working together in future opportunities.": "know that you may consider working together in future opportunities."
+  },
+  "es": {
+    "Preview": "Vista previa",
+    "Hello, my name is": "Hola, mi nombre es",
+    "signalers": "signals recibidos",
+    "recommendation weight": "peso de recomendación",
+    "RECOMMEND": "RECOMENDAR",
+    "MESSAGE": "MENSAJE",
+    "Signals": "Signals",
+    "Are a new way of networking. Let": "Son una nueva forma de networking. Haz que",
+    "know that you may consider working together in future opportunities.": "sepa que considerarías trabajar juntos en futuras oportunidades."
+  }
+}

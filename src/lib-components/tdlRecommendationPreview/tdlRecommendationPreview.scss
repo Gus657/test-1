@@ -1,0 +1,102 @@
+@import "../../core/stylesheets/variables.scss";
+
+@mixin transform($props) {
+  -ms-transform: $props;
+  -o-transform: $props;
+  -moz-transform: $props;
+  transform: $props;
+  -webkit-transform: $props;
+}
+
+@mixin boxShadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+.preview {
+  border: 1px solid;
+  width: 80%;
+  min-height: 90px;
+  padding: 16px;
+  margin: 64px auto;
+  @include boxShadow(8px 8px 8px 0 $black-opacity-24);
+  @include transform(skew(0deg, 4deg));
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  cursor: default;
+
+  .duration-label {
+    &--topspace{
+      margin-top: 16px;
+    }
+  }
+
+  &-input {
+    padding: 12px 16px 0;
+    width: 100%;
+
+    &--select {
+      width: calc(100% - 24px);
+
+      &:after {
+        float: right;
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+        font-family: 'Material Icons';
+        content: "\E5C5";
+      }
+    }
+  }
+
+  &-label + &-input {
+    margin-top: -4px;
+  }
+
+  .md-chips {
+    padding-top: 8px;
+    min-height: 38px;
+    pointer-events: none;
+    margin-bottom: 16px !important;
+
+    .md-input {
+      display: none;
+    }
+
+    .md-chip {
+      max-width: 99%;
+    }
+  }
+
+  .radio-group {
+    pointer-events: none;
+  }
+
+  &-button {
+    align-self: flex-end;
+    pointer-events: none;
+  }
+
+  .radio-group {
+    margin-bottom: 16px;
+    width: 100%;
+    display: grid;
+
+    &--grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-auto-flow: column;
+      @media(max-width: 720px / 2) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+    }
+
+    .radio-group__option {
+      margin: 8px 0;
+    }
+  }
+}

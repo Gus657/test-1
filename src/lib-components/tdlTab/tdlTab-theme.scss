@@ -1,0 +1,13 @@
+.THEME_NAME {
+  .tdl-tab {
+    .md-button {
+      &.md-primary {
+        color: #{'TEXT-DEFAULT'} !important;
+
+        &.md-active {
+          color: #{'ACCENT-SECONDARY'} !important;
+        }
+      }
+    }
+  }
+}

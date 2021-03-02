@@ -1,0 +1,30 @@
+{
+  "en": {
+    "is building his/her professional reputation.": "is building his/her professional reputation.",
+    "For which strengths and skills can you recommend": "For which strengths and skills can you recommend",
+    "Relationship*": "Relationship*",
+    "Duration of your interaction for this recommendation:": "Duration of your interaction for this recommendation:",
+    "RECOMMEND": "RECOMMEND",
+    "Minutes": "Minutes",
+    "Hours": "Hours",
+    "Days": "Days",
+    "Weeks": "Weeks",
+    "Months": "Months",
+    "Years": "Years",
+    "Preview": "Preview"
+  },
+  "es": {
+    "is building his/her professional reputation.": "está construyendo su reputación profesional.",
+    "For which strengths and skills can you recommend": "Para cuáles habilidades puede recomendar",
+    "Relationship*": "Relación*",
+    "Duration of your interaction for this recommendation:": "Duración de la interación para esta recomendación:",
+    "RECOMMEND": "RECOMENDAR",
+    "Minutes": "Minutos",
+    "Hours": "Horas",
+    "Days": "Días",
+    "Weeks": "Semanas",
+    "Months": "Mes",
+    "Years": "Años",
+    "Preview": "Vista previa"
+  }
+}

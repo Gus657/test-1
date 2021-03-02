@@ -1,0 +1,46 @@
+<template>
+  <div class="tdl-magnifying-glass" :style="cssVariables">
+    <svg width="73" height="95" viewBox="0 0 73 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M25 37C25 29.8203 30.8203 24 38 24C41.4478 24 44.7544 25.3696 47.1924 27.8076C49.6304 30.2456 51 33.5522 51 37C51 40.4478 49.6304 43.7544 47.1924 46.1924C44.7544 48.6304 41.4478 50 38 50C34.5522 50 31.2456 48.6304 28.8076 46.1924C26.3696 43.7544 25 40.4478 25 37ZM33.45 31.8C32.41 31.8 31.5 32.71 31.5 33.75C31.5 34.79 32.41 35.7 33.45 35.7C34.49 35.7 35.4 34.79 35.4 33.75C35.4 32.71 34.49 31.8 33.45 31.8ZM41.601 43.799C41.016 42.85 39.625 42.2 38 42.2C36.375 42.2 34.984 42.85 34.399 43.799L32.553 41.953C33.723 40.536 35.725 39.6 38 39.6C40.275 39.6 42.277 40.536 43.447 41.953L41.601 43.799ZM40.6 33.75C40.6 34.79 41.51 35.7 42.55 35.7C43.59 35.7 44.5 34.79 44.5 33.75C44.5 32.71 43.59 31.8 42.55 31.8C41.51 31.8 40.6 32.71 40.6 33.75Z" fill="white" fill-opacity="0.9"/>
+        <path d="M18 26L15 23" stroke="#CDDC39" stroke-width="4"/>
+        <path d="M23 23V19" stroke="#CDDC39" stroke-width="4"/>
+        <path d="M19 32H15" stroke="#CDDC39" stroke-width="4"/>
+        <ellipse cx="36.5" cy="36" rx="34.5" ry="34" stroke="#CDDC39" stroke-width="3.6855"/>
+        <path d="M20.3855 66.5843L23.2698 68.2426L8.23482 94.1963L5.35056 92.5379L20.3855 66.5843Z" fill="#CDDC39"/>
+    </svg>
+  </div>
+</template>
+
+<script>
+  const TdlMagnifyingGlass = {
+    name: 'tdl-magnifying-glass',
+    props: {
+      theme: {
+        type: String,
+        required: false,
+        default: 'dark'
+      },
+      width: {
+        type: Number,
+        default: 180
+      }
+    },
+    computed: {
+      cssVariables() {
+        return {
+          '--theme': this.theme,
+          'width': this.$props.width + 'px'
+        };
+      }
+    }
+  };
+
+  export default TdlMagnifyingGlass;
+</script>
+
+<style lang="scss">
+  @import '../../core/stylesheets/themeMixin.scss'; 
+  .tdl-magnifying-glass {
+    fill: #{getComponentColor($theme: var(--theme), $type: "logo")};
+  }
+</style>

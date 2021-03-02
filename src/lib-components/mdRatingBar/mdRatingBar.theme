@@ -1,0 +1,30 @@
+.THEME_NAME {
+  &.md-rating-bar {
+    > .md-empty-icon .md-icon {
+      color: #{'TEXT-DISABLED'};
+    }
+
+    > .md-full-icon .md-icon {
+      color: #{'TEXT-DEFAULT'};
+    }
+
+    &.md-primary > .md-full-icon .md-icon {
+      color: #{'ACCENT-PRIMARY'};
+    }
+
+    &.md-accent > .md-full-icon .md-icon {
+      color: #{'ACCENT-SECONDARY'};
+
+    }
+
+    &.md-warn > .md-full-icon .md-icon {
+      color: #{'ACCENT-WARN'};
+    }
+
+    &:not([disabled]) {
+      &:hover{
+        background-color: #{'BACKGROUND-INVERTED-0.16'};
+      }
+    }
+  }
+}

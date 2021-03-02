@@ -1,0 +1,75 @@
+.THEME_NAME {
+  &.md-checkbox {
+    &.md-checked {
+      .md-checkbox-container {
+        background-color: #{'ACCENT-SECONDARY'};
+        border-color: #{'ACCENT-SECONDARY'};
+
+        &:after {
+          border-color: #{'TEXT-ACCENT_TITLE'};
+        }
+      }
+    }
+
+    .md-checkbox-container {
+      border: 2px solid #{'TEXT-DEFAULT'};
+    }
+
+    .md-ink-ripple {
+      color: #{'ACCENT-SECONDARY'};
+    }
+
+    .md-ripple {
+      opacity: .26;
+    }
+
+    &.md-primary {
+      &.md-checked {
+        .md-checkbox-container {
+          background-color: #{'ACCENT-PRIMARY'};
+          border-color: #{'ACCENT-PRIMARY'};
+
+          &:after {
+            border-color: #{'TEXT-ACCENT_TITLE'};
+          }
+        }
+      }
+
+      .md-ink-ripple {
+        color: #{'ACCENT-PRIMARY'};
+      }
+    }
+
+    &.md-warn {
+      &.md-checked {
+        .md-checkbox-container {
+          background-color: #{'ACCENT-WARN'};
+          border-color: #{'ACCENT-WARN'};
+
+          &:after {
+            border-color: #{'TEXT-ACCENT_TITLE'};
+          }
+        }
+      }
+
+      .md-ink-ripple {
+        color: #{'ACCENT-WARN'};
+      }
+    }
+
+    &.md-disabled {
+      &.md-checked {
+        .md-checkbox-container {
+          background-color: #{'TEXT-DISABLED'};
+          border-color: transparent;
+        }
+      }
+
+      &:not(.md-checked) {
+        .md-checkbox-container {
+          border-color: #{'TEXT-DISABLED'};
+        }
+      }
+    }
+  }
+}

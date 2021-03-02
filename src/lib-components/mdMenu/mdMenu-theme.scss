@@ -1,0 +1,22 @@
+.THEME_NAME {
+  .md-menu-content &.md-list {
+    background-color: #{'BACKGROUND-ELEVATION_2'};
+    color: #{'TEXT-TITLE'};
+
+    .md-menu-item {
+      &:hover,
+      &:focus,
+      &.md-highlighted {
+        background-color: #{'BACKGROUND-INVERTED-0.12'};
+
+        .md-button {
+          background-color: transparent;
+        }
+      }
+
+      &.md-disabled {
+        color: #{'TEXT-DISABLED'};
+      }
+    }
+  }
+}

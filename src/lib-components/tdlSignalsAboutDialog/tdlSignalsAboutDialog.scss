@@ -1,0 +1,41 @@
+.signals-dialog {
+  &__container {
+    padding: 0 16px 40px;
+  }
+
+  &__image {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 24px auto;
+  }
+
+  &__text {
+    margin-top: 1em!important;
+    margin-bottom: 1em!important;
+  }
+
+  &__cta-container {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+  }
+
+  &__call-to-action {
+    display: block;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .top-actions-toolbar {
+    .md-button {
+      min-width: 0;
+      padding-left: 8px;
+      padding-right: 8px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

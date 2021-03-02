@@ -1,0 +1,18 @@
+.THEME_NAME {
+  .entity-picture {
+    &__thumbnail {
+      background-color: #{'BACKGROUND-ELEVATION_2'};
+      border-color: #{'BACKGROUND-ELEVATION_3'};
+
+      &--text span {
+        color: #{'TEXT-TITLE'};
+      }
+    }
+
+    &--is-hexagon {
+      .hexagon-border {
+        background-color: #{'BACKGROUND-ELEVATION_3'};
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.THEME_NAME {
+  &.tdl-signal-button {
+    .tdl-signal-button__signal-button {
+
+      &:not(.tdl-signal-button__signal-button--simple) {
+        color: #{'ACCENT-PRIMARY'} !important;
+        -webkit-text-fill-color: #{'ACCENT-PRIMARY'};
+      }
+
+      &.tdl-signal-button__signal-button--simple.tdl-signal-button--inverted {
+        background-color: #{'COMPONENT-BUTTON'};
+        color: #{'ACCENT-PRIMARY'};
+        -webkit-text-fill-color: #{'ACCENT-PRIMARY'};
+
+        &:hover {
+          background-color: #{'COMPONENT-BUTTON'};
+        }
+      }
+
+      &.tdl-signal-button__signal-button--elevated {
+        background-color: #{'BACKGROUND-ELEVATION_3'} !important;
+      }
+    }
+
+    .tdl-signal-button__link {
+      color: #{'ACCENT-PRIMARY'}!important;
+    }
+
+    .tdl-signal-button__menu {
+      background-color: #{'COMPONENT-BUTTON'};
+      &:hover {
+        background-color: #{'COMPONENT-BUTTON'};
+      }
+    }
+
+    .tdl-signal-button__menu-container {
+      background-color: #{'COMPONENT-BUTTON'};
+      &:hover {
+        background-color: #{'COMPONENT-BUTTON'};
+      }
+      &.tdl-signal-button__menu-container--elevated {
+        background-color: #{'BACKGROUND-ELEVATION_3'} !important;
+      }
+    }
+  }
+
+  .tdl-menu-content--center {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .tdl-signal-button__menu-item {
+    &.tdl-signal-button__menu-item--selected {
+      .md-list-item-container {
+        background-color: #{'ACCENT-PRIMARY-0.12'};
+      }
+    }
+  }
+
+  .tdl-signal-button__menu-title {
+    color: #{'TEXT-DEFAULT'};
+  }
+
+  .tdl-signal-button__menu-icon {
+    color: #{'TEXT-DEFAULT'};
+
+    &.tdl-signal-button__menu-icon--highlighted {
+      color: #{'ACCENT-PRIMARY'}!important;
+    }
+  }
+}

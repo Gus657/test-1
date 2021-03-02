@@ -1,0 +1,26 @@
+.THEME_NAME {
+  .tdl-boards-slide {
+    background-color: #{'BACKGROUND-ELEVATION_0'};
+
+    &__card {
+      .slide {
+        &__button {
+          color: #{'ACCENT-PRIMARY'} !important;
+        }
+
+        &__text {
+          color: #{'TEXT-DEFAULT'};
+        }
+      }
+    }
+
+    &__control-button {
+      color: #{'ACCENT-PRIMARY'} !important;
+    }
+
+    .md-board-header:not(.md-active) {
+      color: #{'ACCENT-PRIMARY'} !important;
+      opacity: 0.24;
+    }
+  }
+}

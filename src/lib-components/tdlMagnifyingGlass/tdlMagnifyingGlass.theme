@@ -1,0 +1,5 @@
+.THEME_NAME {
+  &.tdl-brand-logo .logo-svg {
+    fill: #{'COMPONENT-LOGO'};
+  }
+}

@@ -1,0 +1,20 @@
+.tdl-preference-selector {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+
+  > * {
+    margin-top: 8px!important;
+    margin-bottom: 8px!important;
+  }
+
+  &__switch {
+    margin-left: 30px!important;
+  }
+
+  .md-checkbox-label {
+    &:first-letter {
+      text-transform: uppercase
+    }
+  }
+}

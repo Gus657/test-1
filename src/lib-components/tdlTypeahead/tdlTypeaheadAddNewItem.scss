@@ -1,0 +1,35 @@
+@import "../../core/stylesheets/utils.scss";
+
+.tdl-typeahead-add-new-item {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding: 14px 16px;
+  margin: 0;
+  overflow: hidden; 
+
+  &__text {
+    overflow: hidden; 
+    margin-left: 25px;
+  }
+
+  p {
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    margin: 0;
+  }
+
+  .md-icon {
+    margin: 0;
+    @include icon-size(var(24px));
+  }
+
+  &__type {
+    text-transform: lowercase;
+  }
+
+  &__icon {
+    margin-left: 4px;
+    @include icon-size(16px);
+  }
+}

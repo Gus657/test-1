@@ -1,0 +1,105 @@
+.THEME_NAME {
+  &.md-table {
+    tbody .md-table-row {
+      border-top: 1px solid #{'TEXT-DISABLED'};
+
+      &.md-selected .md-table-cell {
+        background-color: #{'BACKGROUND-INVERTED-0.1'};
+      }
+
+      &:hover .md-table-cell {
+        background-color: #{'BACKGROUND-INVERTED-0.1'};
+      }
+    }
+
+    .md-table-head {
+      color: #{'TEXT-DEFAULT'};
+
+      .md-icon {
+        color: #{'TEXT-DEFAULT'};
+      }
+    }
+
+    .md-sortable {
+      &:hover,
+      &.md-sorted {
+        color: #{'TEXT-TITLE'};
+      }
+
+      &.md-sorted {
+        .md-sortable-icon {
+          color: #{'TEXT-TITLE'};
+        }
+      }
+
+      .md-sortable-icon {
+        color: #{'TEXT-DEFAULT'};
+      }
+
+      .md-ink-ripple {
+        color: #{'TEXT-TITLE'};
+      }
+    }
+
+    .md-table-cell {
+      color: #{'TEXT-TITLE'};
+
+      .md-button {
+        .md-icon {
+          color: #{'TEXT-DEFAULT'};
+        }
+      }
+    }
+  }
+
+  &.md-table-edit-trigger {
+    color: #{'TEXT-DISABLED'};
+
+    &.md-edited {
+      color: #{'TEXT-TITLE'};
+    }
+  }
+
+  &.md-table-dialog {
+    .md-char-counter {
+      color: #{'TEXT-DEFAULT'};
+    }
+  }
+
+  &.md-table-card {
+    .md-toolbar {
+      background-color: #{'BACKGROUND-ELEVATION_1'};
+      color: #{'TEXT-TITLE'};
+    }
+
+    .md-table-pagination {
+      border-top: 1px solid #{'TEXT-DISABLED'};
+      color: #{'TEXT-DEFAULT'};
+
+      .md-button {
+        &:not([disabled]) {
+          color: #{'TEXT-TITLE'};
+        }
+
+        &[disabled] {
+          .md-icon {
+            color: #{'TEXT-DISABLED'};
+          }
+        }
+      }
+    }
+  }
+
+  &.md-table-alternate-header {
+    background-color: #{'BACKGROUND-ELEVATION_1'};
+
+    .md-toolbar {
+      background-color: #{'ACCENT-SECONDARY-0.2'};
+      color: #{'TEXT-TITLE'};
+    }
+
+    .md-counter {
+      color: #{'ACCENT-SECONDARY'};
+    }
+  }
+}

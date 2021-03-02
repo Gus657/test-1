@@ -1,0 +1,62 @@
+.THEME_NAME {
+  .preview {
+    background-color: #{'BACKGROUND-ELEVATION_1'};
+    border-color: #{'ACCENT-PRIMARY'};
+
+    &__scrim {
+      background-color: #{'BACKGROUND-ELEVATION_0-0.75'};
+    }
+
+    &__headline {
+      .md-icon.profile__headline--icon {
+        color: #{'TEXT-DEFAULT'} !important;
+      }
+    }
+
+    &__share {
+      color: #{'ACCENT-PRIMARY'};
+    }
+
+    &__call-to-actions {
+      .call-to-action {
+        &__text, &__stat {
+          color: #{'ACCENT-PRIMARY'};
+        }
+      }
+
+      .recommendation-weight {
+        .md-icon {
+          color: #{'ACCENT-PRIMARY'};
+        }
+      }
+
+      .md-button {
+        &.md-raised {
+          background-color: #{'ACCENT-PRIMARY'} !important;
+          color: #{'TEXT-ACCENT_TITLE'};
+        }
+      }
+    }
+
+    .feature-discovery {
+      &__tap-target {
+        background-color: #{'BACKGROUND-ELEVATION_3-0.96'}
+      }
+
+      &__wave {
+        &::before,
+        &::after {
+          background-color: #{'BACKGROUND-ELEVATION_1'};
+        }
+      }
+
+      &__content {
+        color: #{'TEXT-TITLE'};
+
+        h1, h2, h3, h4, h5 {
+          color: #{'ACCENT-PRIMARY'};
+        }
+      }
+    }
+  }
+}

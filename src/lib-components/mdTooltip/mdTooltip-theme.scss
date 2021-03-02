@@ -1,0 +1,10 @@
+.THEME_NAME {
+  &.md-tooltip {
+    background-color: #{'COMPONENT-TOOLTIP'};
+    color: #{'TEXT-ACCENT_TITLE'};
+
+    .md-label, div, p {
+      color: #{'TEXT-ACCENT_TITLE'};
+    }
+  }
+}

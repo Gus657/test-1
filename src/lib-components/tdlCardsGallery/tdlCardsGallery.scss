@@ -1,0 +1,121 @@
+@import '../../core/stylesheets/custom.scss';
+@import "../../core/stylesheets/utils.scss";
+
+.tdl-cards-gallery {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: increaseOpacity .5s 1s;
+  animation-fill-mode: forwards;
+
+  &__section-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    @include remove-scrollbar();
+
+    &--less-content {
+      max-width: 100% !important;
+    }
+  }
+
+  &__cards-list {
+    display: flex;
+    justify-content: flex-start;
+    transition: all .2s;
+
+    > * {
+      margin-right: var(--card-gap);
+      width: var(--computed-card-width) !important;
+      min-width: var(--computed-card-width) !important;
+
+      @media (max-width: $content-breakpoint) {
+        &:first-child {
+          margin-left: var(--card-gap)!important;
+        }
+
+        &:last-child {
+          margin-right: var(--card-gap)!important;
+        }
+      }
+    }
+  }
+
+  &__action {
+    min-width: 40px;
+    max-width: 40px;
+
+    @media (max-width: $content-breakpoint) {
+      min-width: 32px;
+    }
+
+    .md-icon {
+      display: flex;
+      @include icon-size(var(--icon-size));
+      line-height: var(--icon-size);
+    }
+
+    &--overlapping {
+      position: absolute;
+      top: calc(50% - 20px);
+
+      > .md-button {
+        z-index: 2;
+      }
+
+      &.tdl-cards-gallery__action--less {
+        left: -24px;
+      }
+
+      &.tdl-cards-gallery__action--more {
+        right: -12px;
+      }
+
+      @media (max-width: $content-breakpoint) {
+        display: none;
+      }
+    }
+
+    &--more {
+      .md-button {
+        margin-right: 0;
+      }
+
+      @media (max-width: $content-breakpoint) {
+        .md-button {
+          margin-right: 8px;
+          margin-left: 0;
+          padding-left: 0;
+        }
+      }
+    }
+
+    &--less {
+      .md-button {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @keyframes increaseOpacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

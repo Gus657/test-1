@@ -1,0 +1,41 @@
+.THEME_NAME {
+  &.md-avatar {
+    &.md-avatar-icon {
+      background-color: #{'BACKGROUND-INVERTED-0.38'};
+
+      .md-icon {
+        color: #{'BACKGROUND-ELEVATION_1'};
+      }
+    }
+
+    &.md-primary {
+      &.md-avatar-icon {
+        background-color: #{'ACCENT-PRIMARY'};
+
+        .md-icon {
+          color: #{'TEXT-ACCENT_TITLE'};
+        }
+      }
+    }
+
+    &.md-accent {
+      &.md-avatar-icon {
+        background-color: #{'ACCENT-SECONDARY'};
+
+        .md-icon {
+          color: #{'TEXT-ACCENT_TITLE'};
+        }
+      }
+    }
+
+    &.md-warn {
+      &.md-avatar-icon {
+        background-color: #{'ACCENT-WARN'};
+
+        .md-icon {
+          color: #{'TEXT-ACCENT_TITLE'};
+        }
+      }
+    }
+  }
+}

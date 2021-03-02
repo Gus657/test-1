@@ -1,0 +1,37 @@
+.THEME_NAME {
+  &.tdl-countdown {
+    &__label {
+      &--inline {
+        color: #{'TEXT-DEFAULT'};
+      }
+    }
+
+    .timer {
+      &__separator {
+        border-color: #{'TEXT-TITLE'};
+      }
+
+      &__box {
+        color: #{'TEXT-TITLE'};
+      }
+    }
+
+    &--contrast {
+      .countdown {
+        &__label, &__label--inline {
+          color: #{'BACKGROUND-ELEVATION_0'};
+        }
+      }
+
+      .timer {
+        &__separator {
+          border-color: #{'BACKGROUND-ELEVATION_0'};
+        }
+
+        &__box {
+          color: #{'BACKGROUND-ELEVATION_0'};
+        }
+      }
+    }
+  }
+}

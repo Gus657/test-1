@@ -1,0 +1,13 @@
+.THEME_NAME {
+  .md-snackbar,
+  &.md-snackbar {
+    .md-ink-ripple {
+      color: #{'TEXT-ACCENT_TITLE'};
+    }
+
+    .md-snackbar-container {
+      background-color: #{'COMPONENT-SNACKBAR'};
+      color: #{'TEXT-ACCENT_TITLE'};
+    }
+  }
+}

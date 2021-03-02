@@ -1,0 +1,22 @@
+.THEME_NAME {
+  &.recommendations-weight-dialog {
+    .content-area {
+      border-bottom: 1px solid #{'BACKGROUND-INVERTED-0.12'};
+    }
+
+    .top-actions-toolbar {
+      background-color: #{'BACKGROUND-ELEVATION_2'} !important;
+      color: #{'TEXT-DEFAULT'} !important;
+    }
+
+    .md-dialog {
+      .md-dialog-content {
+        background-color: #{'BACKGROUND-ELEVATION_1'};
+      }
+    }
+
+    .tdl-weight-formula path {
+      fill: #{'TEXT-TITLE'};;
+    }
+  }
+}

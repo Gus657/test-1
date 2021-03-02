@@ -1,0 +1,19 @@
+.THEME_NAME {
+  .tdl-typeahead-add-new-item {
+    background-color: #{'ACCENT-PRIMARY'};
+
+    .md-icon {
+      color: #{'TEXT-ACCENT_TITLE'} !important;
+    }
+
+    &__text {
+      p:first-of-type {
+        color: #{'TEXT-ACCENT_DEFAULT'};
+      }
+
+      p {
+        color: #{'TEXT-ACCENT_TITLE'};
+      }
+    }
+  }
+}

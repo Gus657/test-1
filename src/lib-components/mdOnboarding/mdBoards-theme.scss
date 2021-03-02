@@ -1,0 +1,116 @@
+.THEME_NAME {
+  &.md-boards {
+    > .md-boards-navigation {
+      background-color: transparent;
+
+      .md-board-header {
+        color: #{'TEXT-DEFAULT'};
+
+        &.md-active,
+        &:focus {
+          color: #{'ACCENT-PRIMARY'};
+        }
+
+        &.md-disabled {
+          color: #{'TEXT-DISABLED'}
+        }
+      }
+
+      .md-button {
+        color: #{'ACCENT-PRIMARY'};
+      }
+    }
+
+    &.md-transparent {
+      > .md-boards-navigation {
+        background-color: transparent;
+
+        .md-board-header {
+          color: #{'TEXT-DEFAULT'};
+
+          &.md-active,
+          &:focus {
+            color: #{'TEXT-TITLE'};
+          }
+
+          &.md-disabled {
+            color: #{'TEXT-DISABLED'}
+          }
+        }
+
+        .md-button {
+          color: #{'TEXT-DEFAULT'};
+        }
+      }
+    }
+
+    &.md-primary {
+      > .md-boards-navigation {
+        background-color: #{'ACCENT-PRIMARY'};
+
+        .md-board-header {
+          color: #{'TEXT-ACCENT_DEFAULT'};
+
+          &.md-active,
+          &:focus {
+            color: #{'TEXT-ACCENT_TITLE'};
+          }
+
+          &.md-disabled {
+            color: #{'TEXT-ACCENT_DISABLED'}
+          }
+        }
+
+        .md-button {
+          color: #{'TEXT-ACCENT_DEFAULT'};
+        }
+      }
+    }
+
+    &.md-accent {
+      > .md-boards-navigation {
+        background-color: #{'ACCENT-SECONDARY'};
+
+        .md-board-header {
+          color: #{'TEXT-ACCENT_DEFAULT'};
+
+          &.md-active,
+          &:focus {
+            color: #{'TEXT-ACCENT_TITLE'};
+          }
+
+          &.md-disabled {
+            color: #{'TEXT-ACCENT_DISABLED'}
+          }
+        }
+
+        .md-button {
+          color: #{'TEXT-ACCENT_DEFAULT'};
+        }
+      }
+    }
+
+    &.md-warn {
+      > .md-boards-navigation {
+        background-color: #{'ACCENT-WARN'};
+
+        .md-board-header {
+          color: #{'TEXT-ACCENT_DEFAULT'};
+
+          &.md-active,
+          &:focus {
+            color: #{'TEXT-ACCENT_TITLE'};
+          }
+
+          &.md-disabled {
+            color: #{'TEXT-ACCENT_DISABLED'}
+          }
+        }
+
+        .md-button {
+          color: #{'TEXT-ACCENT_DEFAULT'};
+        }
+      }
+    }
+  }
+}

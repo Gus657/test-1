@@ -1,0 +1,78 @@
+.THEME_NAME {
+  &.md-switch {
+    &.md-checked {
+      .md-switch-container {
+        background-color: #{'ACCENT-SECONDARY-0.5'};
+      }
+
+      .md-switch-thumb {
+        background-color: #{'ACCENT-SECONDARY'};
+      }
+
+      .md-ink-ripple {
+        color: #{'ACCENT-SECONDARY'};
+      }
+
+      .md-ripple {
+        opacity: .38;
+      }
+    }
+
+    &:not(.md-checked) .md-switch-container {
+      background-color: #{'BACKGROUND-INVERTED-0.38'};
+    }
+
+    .md-switch-thumb {
+      background-color: #{'BACKGROUND-ELEVATION_2'};
+    }
+
+    &.md-checked.md-primary {
+      .md-switch-container {
+        background-color: #{'ACCENT-PRIMARY-0.5'};
+      }
+
+      .md-switch-thumb {
+        background-color: #{'ACCENT-PRIMARY'};
+      }
+
+      .md-ink-ripple {
+        color: #{'ACCENT-PRIMARY'};
+      }
+    }
+
+    &.md-checked.md-warn {
+      .md-switch-container {
+        background-color: #{'ACCENT-WARN-0.5'};
+      }
+
+      .md-switch-thumb {
+        background-color: #{'ACCENT-WARN'};
+      }
+
+      .md-ink-ripple {
+        color: #{'ACCENT-WARN'};
+      }
+    }
+
+    &.md-disabled,
+    &.md-disabled.md-checked {
+      .md-switch-container {
+        background-color: #{'TEXT-DISABLED'};
+      }
+
+      label {
+        color: #{'TEXT-DISABLED'};
+      }
+
+      .md-switch-thumb {
+        background-color: #{'COMPONENT-SWITCH_THUMB'};
+      }
+    }
+
+    .md-switch-container {
+      .md-ink-ripple {
+        color: #{'TEXT-DEFAULT'};
+      }
+    }
+  }
+}

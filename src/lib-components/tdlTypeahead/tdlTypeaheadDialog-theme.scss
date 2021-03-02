@@ -1,0 +1,19 @@
+.THEME_NAME {
+  .results__result--selectable {
+    background-color: #{'ACCENT-PRIMARY-0.12'};
+  }
+
+  &.typeahead-dialog {
+    &__input-container {
+      background-color: #{'BACKGROUND-ELEVATION_1'};
+
+      .typeahead-dialog__search-actions {
+        background-color: #{'BACKGROUND-ELEVATION_2'};
+      }
+    }
+
+    &__search-actions-close {
+      color: #{'TEXT-DEFAULT'};
+    }
+  }
+}

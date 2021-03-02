@@ -1,0 +1,81 @@
+.THEME_NAME {
+  &.md-radio {
+    .md-radio-container {
+      border: 2px solid #{'TEXT-DEFAULT'};
+
+      .md-ink-ripple {
+        color: #{'TEXT-DEFAULT'};
+      }
+    }
+
+    .md-radio-container:after {
+      background-color: #{'ACCENT-SECONDARY'};
+    }
+
+    &.md-checked {
+      .md-radio-container {
+        border-color: #{'ACCENT-SECONDARY'};
+      }
+
+      .md-ink-ripple {
+        color: #{'ACCENT-SECONDARY'};
+      }
+
+      .md-ripple {
+        opacity: .38;
+      }
+    }
+
+    &.md-primary {
+      .md-radio-container:after {
+        background-color: #{'ACCENT-PRIMARY'};
+      }
+
+      &.md-checked {
+        .md-radio-container {
+          border-color: #{'ACCENT-PRIMARY'};
+        }
+
+        .md-ink-ripple {
+          color: #{'ACCENT-PRIMARY'};
+        }
+      }
+    }
+
+    &.md-warn {
+      .md-radio-container:after {
+        background-color: #{'ACCENT-WARN'};
+      }
+
+      &.md-checked {
+        .md-radio-container {
+          border-color: #{'ACCENT-WARN'};
+        }
+
+        .md-ink-ripple {
+          color: #{'ACCENT-WARN'};
+        }
+      }
+    }
+
+    &.md-disabled {
+      .md-radio-container {
+        border-color: #{'TEXT-DISABLED'};
+
+        &:after {
+          background-color: #{'TEXT-DISABLED'};
+        }
+      }
+
+      &.md-checked {
+        .md-radio-container {
+          border-color: #{'TEXT-DISABLED'};
+        }
+      }
+
+      .md-radio-label {
+        color: #{'TEXT-DISABLED'};
+      }
+    }
+  }
+}

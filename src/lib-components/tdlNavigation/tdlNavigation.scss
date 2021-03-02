@@ -1,0 +1,47 @@
+@import '../../core/stylesheets/custom.scss';
+
+.navigation-bar-container {
+  &.allow-side {
+
+    .bottom-nav-bar{
+        flex: 0 0 auto;
+        position: relative;
+
+        .md-bottom-bar {
+            &.md-fixed {
+
+                @media (min-width: $max-width) {
+                    position: fixed;
+                    top: 0;
+                    box-shadow: none;
+                    flex-direction: column;
+                    width: 90px;
+                    padding-top: 64px;
+                    min-width: auto;
+                    height: 100%;
+                    justify-content: center;
+
+                    .md-bottom-bar-item {
+                        padding: 8px;
+                        max-height: 64px;
+                        margin-top: 10px;
+
+                        .md-text {
+                          transform: scale(.9) translateY(2px);
+                        }
+
+                        &.md-active {
+                          transform: scale(1);
+
+                          .md-text {
+                            transform: scale(.9) translateY(2px);
+                          }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+
+}

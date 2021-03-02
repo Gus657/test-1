@@ -1,0 +1,150 @@
+@import '../../core/stylesheets/variables.scss';
+@import '../../core/stylesheets/themeMixin.scss';
+
+$chip-height: 32px;
+$chip-icon-size: 24px;
+$chip-icon-font: $chip-icon-size - 4px;
+
+.md-chip {
+  height: $chip-height;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: $chip-height;
+  transition: $swift-ease-out;
+  font-size: 13px;
+  line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #{getBackgroundColor($theme: var(--theme), $type: "inverted", $opacity: 0.16)};
+
+  .md-chip-container {
+    text-overflow: ellipsis;
+    overflow: hidden; 
+  }
+
+  &.md-deletable {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 4px 6px 4px 16px;
+
+    .md-chip-container {
+      flex-grow: 1;
+      padding: 4px 4px 4px 0px;
+    }
+  }
+
+  &.md-editable {
+    .md-chip-container {
+      cursor: pointer;
+    }
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+
+    &:not(.md-disabled) {
+      cursor: pointer;
+      box-shadow: $material-shadow-2dp;
+    }
+  }
+
+  &.md-deletable, &.md-editable {
+    &:hover,
+    &:focus {
+      background-color: #{getBackgroundColor($theme: var(--theme), $type: "inverted", $opacity: 0.54)};
+      color: #{getBackgroundColor($theme: var(--theme), $type: "elevation_1")};
+
+      .md-delete {
+        color: #{getBackgroundColor($theme: var(--theme), $type: "elevation_1")};
+      }
+    }
+  }
+
+  &.md-disabled {
+    .md-button {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+
+  .md-delete {
+    color: #{getBackgroundColor($theme: var(--theme), $type: "inverted", $opacity: 0.38)};
+
+    .md-ripple {
+      color: #{getBackgroundColor($theme: var(--theme), $type: "elevation_1")};
+    }
+  }
+
+  &.md-primary {
+    color: #{getTextColor($theme: var(--theme), $type: "accent_title")};
+    @include theme-colors("background-color");
+  }
+
+  &.md-accent {
+    color: #{getTextColor($theme: var(--theme), $type: "accent_title")};
+    @include theme-colors("background-color");
+  }
+
+  &.md-warn {
+    color: #{getTextColor($theme: var(--theme), $type: "accent_title")};
+    @include theme-colors("background-color");
+  }
+
+  .md-button.md-delete {
+    width: $chip-icon-size;
+    min-width: $chip-icon-size;
+    height: $chip-icon-size;
+    min-height: $chip-icon-size;
+    margin: 0;
+    padding: 0;
+    border-radius: $chip-icon-size;
+    transition: $swift-ease-out;
+
+    .md-icon {
+      width: $chip-icon-font;
+      min-width: $chip-icon-font;
+      height: $chip-icon-font;
+      min-height: $chip-icon-font;
+      margin: 0;
+      font-size: $chip-icon-font;
+    }
+
+    .md-ink-ripple {
+      border-radius: $chip-height;
+    }
+
+    .md-ripple {
+      opacity: .54;
+    }
+  }
+}
+
+.md-chips {
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px 8px;
+
+  .md-chip {
+    margin-right: 8px;
+    margin-bottom: 4px;
+  }
+
+  .md-input {
+    width: 128px;
+    flex: 1;
+  }
+
+  .md-input::placeholder {
+    opacity: 1;
+  }
+}
+
+.md-chips.md-chips--with-value {
+  .md-input::placeholder {
+    opacity: 0;
+  }
+}

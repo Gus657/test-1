@@ -1,0 +1,13 @@
+@import '../../core/stylesheets/custom.scss';
+
+.tdl-bottom-slot {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.tdl-bottom-slot-toolbar {
+  min-height: 48px;
+  background-color: transparent !important;
+}

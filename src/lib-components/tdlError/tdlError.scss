@@ -1,0 +1,47 @@
+@import '../../core/stylesheets/custom.scss';
+@import '../../core/stylesheets/variables.scss';
+
+.tdl-error {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .tdl-error-container {
+    max-width: 360px;
+    text-align: center;
+    padding: 16px;
+
+    .logo-svg {
+      width: 180px;
+      height: auto;
+      margin: 30px auto 50px auto;
+    }
+
+    .tdl-error-title {
+      font-size: 55px;
+      color: $white-opacity-87;
+    }
+
+    .tdl-error-code {
+      font-size: 23px;
+      line-height: 24px;
+      margin-top: 30px;
+      font-weight: normal;
+      color: $white-opacity-87;
+    }
+
+    .tdl-error-message {
+      margin: 24px 0;
+      font-size: 16px;
+      color: $white-opacity-65;
+      font-weight: 300;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

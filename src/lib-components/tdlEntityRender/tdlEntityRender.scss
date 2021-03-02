@@ -1,0 +1,125 @@
+@import "../../core/stylesheets/utils.scss";
+@import "../../core/stylesheets/variables.scss";
+
+.tdl-entity-render {
+  display: flex;
+  padding: 8px 16px;
+  width: 100%;
+
+  &__picture {
+    margin: 8px 16px 8px 0;
+  }
+
+  &__entity-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin-right: 8px;
+    overflow: hidden;
+
+    & > * {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
+      top: calc(var(--image-border-width) / 2);
+    }
+
+    .md-icon {
+      @include icon-size(var(--size));
+      vertical-align: baseline;
+    }
+  }
+
+  &__entity-name {
+    margin: 0;
+
+    .recommendation-weight {
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  &__icon-rotated {
+    @include icon-size(14px !important);
+    transform: rotate(-45deg);
+    vertical-align: baseline !important;
+    color: $white-opacity-50;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  &__verified * {
+    margin-right: -1px;
+    top: 1px;
+  }
+
+  &__verified-weight * {
+    margin-right: -4px;
+    top: 1px;
+  }
+
+  &--vertical {
+    flex-direction: column;
+
+    .tdl-entity-render {
+      &__entity-data {
+        margin: 0;
+        text-align: center;
+      }
+
+      &__picture {
+        margin-right: 0;
+      }
+
+      &__actions {
+        align-items: center;
+        margin-left: inherit;
+      }
+
+      &__entity-name {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 8px 0 6px;
+        line-height: 1;
+
+        a {
+          margin-right: 2px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+
+        .recommendation-weight {
+          top: 0;
+        }
+      }
+
+      &__professional-headline {
+        min-height: 14px;
+        margin-bottom: 14px;
+      }
+
+      &__jobs-posted {
+        min-height: 14px;
+        margin-bottom: 14px;
+      }
+
+      &__verified * {
+        margin-right: 0;
+        top: 1px;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none !important;
+  }
+}

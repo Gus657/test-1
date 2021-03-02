@@ -1,0 +1,7 @@
+.THEME_NAME {
+  &.tdl-weight-icon {
+    svg path {
+      fill: #{'TEXT-DEFAULT'};
+    }
+  }
+}

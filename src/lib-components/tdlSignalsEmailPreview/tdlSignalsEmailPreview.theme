@@ -1,0 +1,23 @@
+.THEME_NAME {
+  &.tdl-signals-email-preview {
+    .preview {
+      border: 1px solid #{'BACKGROUND-INVERTED-0.12'};
+      background-color: #{'BACKGROUND-ELEVATION_2'};
+
+      &__paragraph {
+        &--opacity-54 {
+          color: #{'TEXT-DEFAULT'};
+        }
+      }
+
+      &__call-to-action {
+        color: #{'ACCENT-PRIMARY'} !important;
+
+        &.md-primary {
+          background-color: #{'ACCENT-PRIMARY'} !important;
+          color: #{'TEXT-ACCENT_TITLE'} !important;
+        }
+      }
+    }
+  }
+}

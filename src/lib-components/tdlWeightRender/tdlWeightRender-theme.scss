@@ -1,0 +1,13 @@
+.THEME_NAME {
+  .recommendation-weight {
+    &__information-icon {
+      color: #{'ACCENT-PRIMARY'} !important;
+    }
+
+    &__dot {
+      .md-icon {
+        color: #{'TEXT-TITLE'} !important;
+      }
+    }
+  }
+}

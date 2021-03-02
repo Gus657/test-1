@@ -1,0 +1,122 @@
+@use "sass:map";
+
+$base: #010101;
+
+$palette-colors: (
+  pink100: #f8bbd0,
+  pink200: #f48fb1,
+  pink300: #f06292,
+  purple100: #e1bee7,
+  purple200: #ce93d8,
+  purple300: #ba68c8,
+  deepPurple200: #b39ddb,
+  deepPurple300: #9575cd,
+  blue200: #90caf9,
+  blue500: #2196f3,
+  cyan200: #80deea,
+  cyan500: #00bcd4,
+  teal200: #80cbc4,
+  teal400: #26a69a,
+  lightGreen500: #8bc34a,
+  lime500: #cddc39,
+  amber300: #ffd54f,
+  amber600: #D69600,
+  orange400: #ffa726,
+  deepOrange500: #ff5722,
+  brown100: #d7ccc8,
+  brown200: #bcaaa4,
+  bio: #cddc39
+);
+
+$background: (
+  elevation_0: #010101,
+  elevation_1: #27292D,
+  elevation_2: #383B40,
+  elevation_3: #5E626B,
+  inverted: #FFFFFF
+);
+
+$component-colors: (
+  text: #FFFFFF,
+  appbar: #27292D,
+  badge: #EF5350,
+  button: #383B40,
+  logo: #F3F3F3,
+  snackbar: #E3E3E3,
+  switch_thumb: #808080,
+  tooltip: #A9A9A9
+);
+
+$text-colors: (
+  default: rgba(255, 255, 255, 0.65),
+  title: rgba(255, 255, 255, 0.90),
+  disabled: rgba(255, 255, 255, 0.38),
+  accent_default: rgba(0, 0, 0, 0.65),
+  accent_title: rgba(0, 0, 0, 0.87),
+  accent_disabled: rgba(0, 0, 0, 0.20)
+);
+
+$accent: (
+  primary: #CDDC39,
+  secondary: #CDDC39,
+  warn: #CF6679
+);
+
+$raised: (
+  primary: #C0CA33,
+  secondary: #C0CA33,
+  warn: #bd5769
+);
+
+@function getComponentColor($theme, $type, $opacity: false) {
+  $result: map.get($component-colors, $type);
+  @if $opacity {
+    @return rgba($result, $opacity);
+  } @else {
+    @return $result;
+  }
+}
+
+@function getTextColor($theme, $type, $opacity: false) {
+  $result: map.get($text-colors, $type);
+  @if $opacity {
+    @return rgba($result, $opacity);
+  } @else {
+    @return $result;
+  }
+}
+
+@function getBackgroundColor($theme, $type, $opacity: false) {
+  $result: map.get($background, $type);
+  @if $opacity {
+    @return rgba($result, $opacity);
+  } @else {
+    @return $result;
+  }
+}
+
+@function getAccentColor($theme, $type, $opacity: false) {
+  $result: map.get($accent, $type);
+  @if $opacity {
+    @return rgba($result, $opacity);
+  } @else {
+    @return $result;
+  }
+}
+
+@function getThemeColor($theme, $opacity: false) {
+  $result: map-get($palette-colors, $theme);
+  @if $opacity {
+    @return rgba($result, $opacity);
+  } @else {
+    @return $result;
+  }
+}
+
+@mixin theme-colors($property) {
+  @each $name, $hex in $palette-colors {
+    &.#{$name} {
+      #{$property}: $hex;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.THEME_NAME {
+  &.md-chip {
+    background-color: #{'BACKGROUND-INVERTED-0.16'};
+
+    &.md-deletable, &.md-editable {
+      &:hover,
+      &:focus {
+        background-color: #{'BACKGROUND-INVERTED-0.54'};
+        color: #{'BACKGROUND-ELEVATION_1'};
+
+        .md-delete {
+          color: #{'BACKGROUND-ELEVATION_1'};
+        }
+      }
+    }
+
+    .md-delete {
+      color: #{'BACKGROUND-INVERTED-0.38'};
+
+      .md-ripple {
+        color: #{'BACKGROUND-ELEVATION_1'};
+      }
+    }
+
+    &.md-primary {
+      color: #{'TEXT-ACCENT_TITLE'};
+      background-color: #{'ACCENT-PRIMARY'};
+    }
+
+    &.md-accent {
+      color: #{'TEXT-ACCENT_TITLE'};
+      background-color: #{'ACCENT-SECONDARY'};
+    }
+
+    &.md-warn {
+      color: #{'TEXT-ACCENT_TITLE'};
+      background-color: #{'ACCENT-WARN'};
+    }
+  }
+}

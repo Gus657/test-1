@@ -1,0 +1,15 @@
+.THEME_NAME {
+  .tdl-scroll-tab {
+    .md-button {
+      &.md-primary {
+        &.md-active {
+          color: #{'ACCENT-SECONDARY'} !important;
+        }
+      }
+
+      &.md-primary {
+        color: #{'TEXT-DEFAULT'} !important;
+      }
+    }
+  }
+}

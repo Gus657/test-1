@@ -1,0 +1,15 @@
+@import '../../core/stylesheets/variables.scss';
+@import '../../core/stylesheets/themeMixin.scss';
+
+.md-divider {
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: 0;
+  background-color: #{getTextColor($theme: var(--theme), $type: "disabled")};
+
+  &.md-inset {
+    margin-left: 72px;
+  }
+}

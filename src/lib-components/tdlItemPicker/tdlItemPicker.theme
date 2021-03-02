@@ -1,0 +1,22 @@
+.THEME_NAME {
+  &.tdl-item-picker {
+    .md-input-container {
+      .md-icon:not(.md-icon-delete):after {
+        background: #{'BACKGROUND-ELEVATION_1'};
+      }
+    }
+
+    &__dialog {
+      .md-list {
+        &-item.md-disabled {
+          color: #{'TEXT-DISABLED'};
+        }
+
+        &-item.highlighted {
+          background: #{'BACKGROUND-INVERTED-0.54'};
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.THEME_NAME {
+  &.md-tabs {
+    > .md-tabs-navigation {
+      background-color: #{'ACCENT-PRIMARY'};
+
+      .md-tab-header {
+        color: #{'TEXT-ACCENT_DEFAULT'};
+
+        &.md-active,
+        &:focus {
+          color: #{'TEXT-ACCENT_TITLE'};
+        }
+
+        &.md-disabled {
+          color: #{'TEXT-ACCENT_DISABLED'}
+        }
+      }
+
+      .md-tab-indicator {
+        background-color: #{'ACCENT-SECONDARY'};
+      }
+
+      .md-tab-header-navigation-button {
+        color: #{'TEXT-ACCENT_DEFAULT'};
+        background-color: #{'ACCENT-PRIMARY'};
+      }
+    }
+
+    &.md-transparent {
+      > .md-tabs-navigation {
+        background-color: transparent;
+        border-bottom: 1px solid #{'BACKGROUND-INVERTED-0.12'};
+
+        .md-tab-header {
+          color: #{'TEXT-DEFAULT'};
+
+          &.md-active,
+          &:focus {
+            color: #{'ACCENT-PRIMARY'};
+          }
+
+          &.md-disabled {
+            color: #{'TEXT-DISABLED'}
+          }
+        }
+
+        .md-tab-indicator {
+          background-color: #{'ACCENT-PRIMARY'};
+        }
+      }
+    }
+
+    &.md-accent {
+      > .md-tabs-navigation {
+        background-color: #{'ACCENT-PRIMARY'};
+
+        .md-tab-header {
+          color: #{'TEXT-ACCENT_DEFAULT'};
+
+          &.md-active,
+          &:focus {
+            color: #{'TEXT-ACCENT_TITLE'};
+          }
+
+          &.md-disabled {
+            color: #{'TEXT-ACCENT_DISABLED'};
+          }
+        }
+
+        .md-tab-indicator {
+          background-color: #{'BACKGROUND-ELEVATION_0'};
+        }
+      }
+    }
+
+    &.md-warn {
+      > .md-tabs-navigation {
+        background-color: #{'ACCENT-WARN'};
+
+        .md-tab-header {
+          color: #{'TEXT-ACCENT_DEFAULT'};
+
+          &.md-active,
+          &:focus {
+            color: #{'TEXT-ACCENT_TITLE'};
+          }
+
+          &.md-disabled {
+            color: #{'TEXT-ACCENT_DISABLED'};
+          }
+        }
+
+        .md-tab-indicator {
+          background-color: #{'BACKGROUND-ELEVATION_0'};
+        }
+      }
+    }
+  }
+}

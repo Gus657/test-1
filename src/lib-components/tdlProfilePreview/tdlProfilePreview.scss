@@ -1,0 +1,217 @@
+@import "../../core/stylesheets/custom.scss";
+@import "../../core/stylesheets/utils.scss";
+@import "../../core/stylesheets/mixins.scss";
+@import "../../core/stylesheets/variables.scss";
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 64px auto;
+  border: 1px solid;
+  @include boxShadow(8px 8px 8px 0 $black-opacity-24);
+  @include transform(skew(0deg, 4deg));
+  user-select: none;
+  cursor: default;
+  pointer-events: none;
+  overflow: hidden;
+
+  &__content {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  &__image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+  }
+
+  &__scrim {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__share {
+    position: absolute;
+    top: 21px;
+    right: 16px;
+    z-index: 1;
+  }
+
+  &__avatar {
+    margin: 0 auto 24px;
+  }
+
+  &__headline {
+    margin-bottom: 0;
+    text-align: center;
+
+    .md-icon {
+      margin-top: auto;
+    }
+  }
+
+  &__title {
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  &__call-to-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 24px;
+
+    .call-to-action {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 24px;
+
+      &__button {
+        min-width: 172px;
+        pointer-events: none;
+
+        &--target {
+          box-shadow: none !important;
+          z-index: 1;
+        }
+      }
+
+      &__stat-button {
+        display: block;
+        margin: auto auto 6px;
+        line-height: unset;
+      }
+
+      &__stat {
+        line-height: 24px;
+      }
+
+      &__text {
+        text-transform: lowercase;
+        line-height: 18px;
+      }
+
+      &--only-button {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .feature-discovery {
+    position: fixed;
+
+    &--open {
+      .feature-discovery__tap-target {
+        transform: scale(1);
+        opacity: .95;
+        transition: transform .3s cubic-bezier(.42, 0, .58, 1), opacity .3s cubic-bezier(.42, 0, .58, 1);
+      }
+
+      .feature-discovery__wave {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 88px;
+        height: 88px;
+        transform: translate(-50%, -67%);
+        background: $white-opacity-20;
+
+        &::before {
+          transform: scale(1);
+        }
+
+        &::after {
+          visibility: visible;
+          animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+          transition: opacity .3s, transform .3s, visibility 0s 1s;
+        }
+      }
+
+      .feature-discovery__content {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .3s, transform .3s, visibility 0s;
+      }
+    }
+
+    &__tap-target {
+      border-radius: 50%;
+      width: 800px;
+      height: 800px;
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    &__wave {
+      position: absolute;
+      border-radius: 50%;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      &::before {
+        transform: scale(0);
+        transition: transform .3s;
+      }
+
+      &::after {
+        z-index: -1;
+        visibility: hidden;
+        transition: opacity .3s, transform .3s, visibility 0s;
+      }
+    }
+
+    &__content {
+      position: absolute;
+      top: 100px;
+      left: 310px;
+      max-width: 250px;
+      visibility: hidden;
+      opacity: 0;
+
+      @media(max-width: 477px) {
+        left: 285px;
+      }
+    }
+
+  }
+
+  @media(max-width: 660px) {
+    width: 90%;
+  }
+}
+
+@keyframes pulse-animation {
+  0% {
+    opacity: 1;
+    transform: scale(1)
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1.5)
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5)
+  }
+}

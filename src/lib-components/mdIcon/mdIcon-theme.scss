@@ -1,0 +1,20 @@
+.THEME_NAME {
+  &.md-icon {
+    &.md-primary {
+      color: #{'ACCENT-PRIMARY'};
+    }
+
+    &.md-accent {
+      color: #{'ACCENT-SECONDARY'};
+    }
+
+    &.md-warn {
+      color: #{'ACCENT-WARN'};
+    }
+
+    .md-icon__badge {
+      background-color: #{'COMPONENT-BADGE'};
+      color: #{'COMPONENT-TEXT'};
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.THEME_NAME {
+  &.tdl-candidate-bar.md-toolbar {
+    background-color: #{'ACCENT-PRIMARY'} !important;
+    color: #{'TEXT-ACCENT_TITLE'};
+
+    .tdl-candidate-bar__rank {
+      span, a {
+        color: #{'TEXT-ACCENT_TITLE'};
+      }
+
+      a {
+        text-decoration: underline !important;
+      }
+    }
+
+    .tdl-candidate-bar__completion {
+      .completion__genome, .completion__ranking-criteria {
+        color: #{'TEXT-ACCENT_TITLE'};
+      }
+
+      .completion__step {
+        background-color: #{'BACKGROUND-ELEVATION_1'};
+      }
+
+      .completion__step--locked {
+        background-color: #{'BACKGROUND-ELEVATION_2'};
+      }
+    }
+
+    .md-select:after {
+      color: #{'TEXT-ACCENT_TITLE'};
+    }
+  }
+}

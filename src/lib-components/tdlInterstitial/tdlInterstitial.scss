@@ -1,0 +1,97 @@
+@import '../../core/stylesheets/custom.scss';
+@import "../../core/stylesheets/utils.scss";
+
+.tdl-interstitial {
+  display: flex;
+  flex-direction: column;
+
+  ::v-deep .md-dialog {
+    width: 600px;
+    height: 640px;
+    overflow-y: scroll;
+  
+    @media(max-width: $content-breakpoint) {
+      min-width: 360px;
+      min-height: 640px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    min-height: 56px;
+    background-color: $tdl-interstitial-background;
+
+    &--text {
+      text-transform: capitalize;
+      font-weight: 300;
+    }
+    
+    h4 {
+      margin: 0 5px;
+    }
+    button {
+      margin: 0;
+
+      i {
+        margin: auto;
+      }
+    }
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    
+    &--text {
+      align-self: flex-start;
+      padding-left: 16px;
+      margin: 25px 0;
+
+      &__caption {
+        text-transform: capitalize;
+        font-weight: 300;
+      }
+
+      &__benefits {
+        margin-top: 20px;
+
+        .md-subheading-2 {
+          line-height: 20px;
+        }
+      }
+    }
+
+    &--image {
+      width: 85%;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media(max-width: $content-breakpoint) {
+        height: auto;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+  
+  &__buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 85%;
+  }
+
+}

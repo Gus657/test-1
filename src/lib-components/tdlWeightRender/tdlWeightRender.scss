@@ -1,0 +1,74 @@
+@import "../../core/stylesheets/utils.scss";
+@import "../../core/stylesheets/themeMixin.scss";
+
+.recommendation-weight {
+  display: inline-flex;
+  align-items: center;
+
+  &__value {
+    display: flex;
+    font-weight: 600;
+  }
+
+  .md-icon {
+    @include icon-size(var(--size));
+    vertical-align: baseline;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__tooltip {
+    width: 280px;
+    height: auto !important;
+    padding: 8px;
+    text-align: center;
+    font-size: 12px;
+    white-space: normal;
+  }
+
+  &__left-column {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 3px;
+  }
+
+  &__right-column {
+    display: flex;
+
+    &--information-icon {
+      align-self: flex-start;
+    }
+  }
+
+  &__dot {
+    display: flex;
+    align-items: center;
+    margin: 0 4px;
+
+    .md-icon {
+      @include icon-size(var(--dot-divider-size));
+      
+      svg {
+        fill: #{getTextColor($theme: var(--theme), $type: "default")};
+      }
+    }
+  }
+
+  a {
+    position: relative;
+    display: inline-flex;
+    align-self: flex-start;
+    margin-top: 4px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    .md-icon {
+      &.recommendation-weight__information-icon {
+        @include icon-size(24px);
+      }
+    }
+  }
+}

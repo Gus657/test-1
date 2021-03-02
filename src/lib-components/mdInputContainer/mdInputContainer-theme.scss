@@ -1,0 +1,170 @@
+.THEME_NAME {
+  &.md-input-container {
+
+    &:not(.md-input-disabled):not(.md-input-focused) {
+      border-color: #{'TEXT-DEFAULT'};
+
+      .outlined-notched {
+        &__leading,
+        &__notch,
+        &__trailing {
+          border-color: #{'TEXT-DEFAULT'};
+        }
+      }
+
+      &:hover {
+        border-color: #{'TEXT-TITLE'};
+
+        label, > .md-icon {
+          color: #{'TEXT-TITLE'};
+        }
+        .outlined-notched {
+          &__leading,
+          &__notch,
+          &__trailing {
+            border-color: #{'TEXT-TITLE'};
+          }
+        }
+      }
+
+      &.md-input-invalid {
+        border-color: #{'ACCENT-WARN'};
+
+        .outlined-notched {
+          &__leading,
+          &__notch,
+          &__trailing {
+            border-color: #{'ACCENT-WARN'};
+          }
+        }
+
+        label,
+        input,
+        textarea,
+        .md-error,
+        .md-count,
+        .md-icon:not(.md-icon-delete) {
+          color: #{'ACCENT-WARN'};
+        }
+      }
+    }
+
+    &.md-input-focused {
+      border-color: #{'ACCENT-PRIMARY'};
+
+      .outlined-notched {
+        &__leading,
+        &__notch,
+        &__trailing {
+          border-color: #{'ACCENT-PRIMARY'};
+        }
+      }
+    }
+
+    &.md-input-disabled {
+      border-color: #{'TEXT-DISABLED'};
+
+      .outlined-notched {
+        &__leading,
+        &__notch,
+        &__trailing {
+          border-color: #{'TEXT-DISABLED'};
+        }
+      }
+
+      label,
+      input,
+      textarea,
+      .md-error,
+      .md-count,
+      .md-icon:not(.md-icon-delete) {
+        color: #{'TEXT-DISABLED'};
+      }
+    }
+
+    label {
+      color: #{'TEXT-DEFAULT'};
+    }
+
+    input, textarea {
+      color: #{'TEXT-TITLE'};
+    }
+
+    ::-webkit-input-placeholder,
+    :-moz-placeholder,
+    ::-moz-placeholder,
+    :-ms-input-placeholder {
+      color: #{'TEXT-DEFAULT'};
+    }
+
+    &.md-input-focused {
+      &.md-input-inline {
+        label {
+          color: #{'TEXT-DEFAULT'};
+        }
+      }
+
+      &.md-input-required {
+        label:after {
+          color: #{'ACCENT-PRIMARY'};
+        }
+      }
+
+      input,
+      textarea {
+        color: #{'ACCENT-PRIMARY'};
+        text-shadow: 0 0 0 #{'TEXT-TITLE'};
+        -webkit-text-fill-color: transparent;
+      }
+
+      label,
+      .md-icon:not(.md-icon-delete) {
+        color: #{'ACCENT-PRIMARY'};
+      }
+    }
+
+    .md-icon:not(.md-icon-delete) {
+      color: #{'TEXT-DEFAULT'};
+    }
+
+    &.md-has-value {
+      input, textarea {
+        color: #{'TEXT-TITLE'};
+      }
+    }
+
+    &.md-has-password {
+      &.md-input-focused .md-toggle-password {
+        color: #{'TEXT-DEFAULT'};
+      }
+
+      .md-toggle-password {
+        color: #{'TEXT-DISABLED'};
+
+        .md-ink-ripple {
+          color: #{'TEXT-TITLE'};
+        }
+      }
+    }
+
+    &.md-clearable {
+      &.md-input-focused .md-clear-input {
+        color: #{'TEXT-DEFAULT'};
+      }
+
+      .md-clear-input {
+        color: #{'TEXT-DISABLED'};
+
+        .md-ink-ripple {
+          color: #{'TEXT-TITLE'};
+        }
+      }
+    }
+
+    &.md-has-select:hover {
+      .md-select:not(.md-disabled):after {
+        color: #{'TEXT-TITLE'};
+      }
+    }
+  }
+}

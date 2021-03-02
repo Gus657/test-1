@@ -1,0 +1,17 @@
+.THEME_NAME {
+  &.md-subheader {
+    color: #{'TEXT-DEFAULT'};
+
+    &.md-primary {
+      color: #{'ACCENT-PRIMARY'};
+    }
+
+    &.md-accent {
+      color: #{'ACCENT-SECONDARY'};
+    }
+
+    &.md-warn {
+      color: #{'ACCENT-WARN'};
+    }
+  }
+}

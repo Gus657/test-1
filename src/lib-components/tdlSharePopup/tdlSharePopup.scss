@@ -1,0 +1,21 @@
+@import '../../core/stylesheets/custom.scss';
+
+.md-dialog-title.md-title{
+  margin-bottom: 4px;
+}
+.md-dialog.md-reference{
+  .md-dialog-content{
+    padding: 0 24px;
+    .md-list-item{
+      .md-list-item-container{
+        padding:0px;
+      }
+      &.clipboard-item{
+        margin-top: 4px;
+        .md-input-container.md-has-value{
+          margin: 4px 0px;
+        }
+      }
+    }
+  }
+}

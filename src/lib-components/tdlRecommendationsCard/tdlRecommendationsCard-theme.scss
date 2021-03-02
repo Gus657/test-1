@@ -1,0 +1,55 @@
+.THEME_NAME {
+  &.tdl-recommendations-card {
+    .recommendation-card {
+      &__content {
+        &--view-all {
+          .md-icon {
+            color: #{'ACCENT-PRIMARY'} !important;
+          }
+        }
+
+        .content-subheading {
+          color: #{'TEXT-TITLE'};
+
+          .mdi-weight {
+            color: #{'TEXT-TITLE'};
+          }
+
+          &__icon {
+            color: #{'TEXT-DEFAULT'} !important;
+          }
+
+          &__dot {
+            color: #{'BACKGROUND-INVERTED-0.25'};
+          }
+        }
+
+        .content-body {
+          color: #{'TEXT-DEFAULT'};
+        }
+
+        .content-strengths {
+          &__title, &__content {
+            color: #{'TEXT-TITLE'};
+          }
+        }
+
+        .content-relationship .md-body-1 {
+          color: #{'TEXT-DEFAULT'};
+        }
+      }
+
+      &:hover {
+        background-color: #{'BACKGROUND-ELEVATION_2'};
+      }
+
+      hr {
+        background-color: #{'BACKGROUND-INVERTED-0.12'};
+      }
+
+      &__title {
+        color: #{'TEXT-DEFAULT'} !important;
+      }
+    }
+  }
+}

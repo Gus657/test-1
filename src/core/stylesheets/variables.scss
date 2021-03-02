@@ -1,0 +1,73 @@
+/* Common */
+$font-muli: "Muli", "Helvetica", "Arial", sans-serif;
+/* Responsive Breakpoints */
+$breakpoint-xsmall: 600px !default;
+$breakpoint-small: 960px !default;
+$breakpoint-medium: 1280px !default;
+$breakpoint-large: 1920px !default;
+/* Transitions - Based on Angular Material */
+$swift-ease-out-duration: 0.4s !default;
+$swift-ease-out-timing-function: cubic-bezier(.25, .8, .25, 1) !default;
+$swift-ease-out: all $swift-ease-out-duration $swift-ease-out-timing-function !default;
+$swift-ease-in-duration: 0.3s !default;
+$swift-ease-in-timing-function: cubic-bezier(.55, 0, .55, .2) !default;
+$swift-ease-in: all $swift-ease-in-duration $swift-ease-in-timing-function !default;
+$swift-ease-in-out-duration: 0.5s !default;
+$swift-ease-in-out-timing-function: cubic-bezier(.35, 0, .25, 1) !default;
+$swift-ease-in-out: all $swift-ease-in-out-duration $swift-ease-in-out-timing-function !default;
+$swift-linear-duration: 0.15s !default;
+$swift-linear-timing-function: linear !default;
+$swift-linear: all $swift-linear-duration $swift-linear-timing-function !default;
+$material-enter-duration: 0.3s;
+$material-enter-timing-function: cubic-bezier(.0, .0, .2, 1);
+$material-enter: all $material-enter-duration $material-enter-timing-function;
+$material-leave-duration: 0.3s;
+$material-leave-timing-function: cubic-bezier(.4, .0, 1, 1);
+$material-leave: all $material-leave-duration $material-leave-timing-function;
+/* Elevation - Based on Angular Material */
+$shadow-key-umbra-opacity: 0.2 !default;
+$shadow-key-penumbra-opacity: 0.14 !default;
+$shadow-ambient-shadow-opacity: 0.12 !default;
+$material-shadow-1dp: 0 1px 3px rgba(#000, $shadow-key-umbra-opacity), 0 1px 1px rgba(#000, $shadow-key-penumbra-opacity), 0 2px 1px -1px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-2dp: 0 1px 5px rgba(#000, $shadow-key-umbra-opacity), 0 2px 2px rgba(#000, $shadow-key-penumbra-opacity), 0 3px 1px -2px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-3dp: 0 1px 8px rgba(#000, $shadow-key-umbra-opacity), 0 3px 4px rgba(#000, $shadow-key-penumbra-opacity), 0 3px 3px -2px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-4dp: 0 2px 4px -1px rgba(#000, $shadow-key-umbra-opacity), 0 4px 5px rgba(#000, $shadow-key-penumbra-opacity), 0 1px 10px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-5dp: 0 3px 5px -1px rgba(#000, $shadow-key-umbra-opacity), 0 5px 8px rgba(#000, $shadow-key-penumbra-opacity), 0 1px 14px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-6dp: 0 3px 5px -1px rgba(#000, $shadow-key-umbra-opacity), 0 6px 10px rgba(#000, $shadow-key-penumbra-opacity), 0 1px 18px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-7dp: 0 4px 5px -2px rgba(#000, $shadow-key-umbra-opacity), 0 7px 10px 1px rgba(#000, $shadow-key-penumbra-opacity), 0 2px 16px 1px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-8dp: 0 5px 5px -3px rgba(#000, $shadow-key-umbra-opacity), 0 8px 10px 1px rgba(#000, $shadow-key-penumbra-opacity), 0 3px 14px 2px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-9dp: 0 5px 6px -3px rgba(#000, $shadow-key-umbra-opacity), 0 9px 12px 1px rgba(#000, $shadow-key-penumbra-opacity), 0 3px 16px 2px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-10dp: 0 6px 6px -3px rgba(#000, $shadow-key-umbra-opacity), 0 10px 14px 1px rgba(#000, $shadow-key-penumbra-opacity), 0 4px 18px 3px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-11dp: 0 6px 7px -4px rgba(#000, $shadow-key-umbra-opacity), 0 11px 15px 1px rgba(#000, $shadow-key-penumbra-opacity), 0 4px 20px 3px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-12dp: 0 7px 8px -4px rgba(#000, $shadow-key-umbra-opacity), 0 12px 17px 2px rgba(#000, $shadow-key-penumbra-opacity), 0 5px 22px 4px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-13dp: 0 7px 8px -4px rgba(#000, $shadow-key-umbra-opacity), 0 13px 19px 2px rgba(#000, $shadow-key-penumbra-opacity), 0 5px 24px 4px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-14dp: 0 7px 9px -4px rgba(#000, $shadow-key-umbra-opacity), 0 14px 21px 2px rgba(#000, $shadow-key-penumbra-opacity), 0 5px 26px 4px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-15dp: 0 8px 9px -5px rgba(#000, $shadow-key-umbra-opacity), 0 15px 22px 2px rgba(#000, $shadow-key-penumbra-opacity), 0 6px 28px 5px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-16dp: 0 8px 10px -5px rgba(#000, $shadow-key-umbra-opacity), 0 16px 24px 2px rgba(#000, $shadow-key-penumbra-opacity), 0 6px 30px 5px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-17dp: 0 8px 11px -5px rgba(#000, $shadow-key-umbra-opacity), 0 17px 26px 2px rgba(#000, $shadow-key-penumbra-opacity), 0 6px 32px 5px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-18dp: 0 9px 11px -5px rgba(#000, $shadow-key-umbra-opacity), 0 18px 28px 2px rgba(#000, $shadow-key-penumbra-opacity), 0 7px 34px 6px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-19dp: 0 9px 12px -6px rgba(#000, $shadow-key-umbra-opacity), 0 19px 29px 2px rgba(#000, $shadow-key-penumbra-opacity), 0 7px 36px 6px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-20dp: 0 10px 13px -6px rgba(#000, $shadow-key-umbra-opacity), 0 20px 31px 3px rgba(#000, $shadow-key-penumbra-opacity), 0 8px 38px 7px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-21dp: 0 10px 13px -6px rgba(#000, $shadow-key-umbra-opacity), 0 21px 33px 3px rgba(#000, $shadow-key-penumbra-opacity), 0 8px 40px 7px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-22dp: 0 10px 14px -6px rgba(#000, $shadow-key-umbra-opacity), 0 22px 35px 3px rgba(#000, $shadow-key-penumbra-opacity), 0 8px 42px 7px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-23dp: 0 11px 14px -7px rgba(#000, $shadow-key-umbra-opacity), 0 23px 36px 3px rgba(#000, $shadow-key-penumbra-opacity), 0 9px 44px 8px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+$material-shadow-24dp: 0 11px 15px -7px rgba(#000, $shadow-key-umbra-opacity), 0 24px 38px 3px rgba(#000, $shadow-key-penumbra-opacity), 0 9px 46px 8px rgba(#000, $shadow-ambient-shadow-opacity) !default;
+
+/* RGBA */
+$black-opacity-5: rgba(0, 0, 0, 0.05);
+$black-opacity-12: rgba(0, 0, 0, 0.12);
+$black-opacity-14: rgba(0, 0, 0, 0.14);
+$black-opacity-20: rgba(0, 0, 0, 0.20);
+$black-opacity-24: rgba(0, 0, 0, 0.24);
+$black-opacity-26: rgba(0, 0, 0, 0.26);
+$black-opacity-38: rgba(0, 0, 0, 0.38);
+$black-opacity-54: rgba(0, 0, 0, 0.54);
+$black-opacity-87: rgba(0, 0, 0, 0.87);
+$white-opacity-10: rgba(255, 255, 255, 0.10);
+$white-opacity-20: rgba(255, 255, 255, 0.20);
+$white-opacity-50: rgba(255, 255, 255, 0.50);
+$white-opacity-65: rgba(255, 255, 255, 0.65);
+$white-opacity-87: rgba(255, 255, 255, 0.87);
+
+// Based on https://codepen.io/thebabydino/pen/XbxKbL
+$hexagon-path: polygon(45% 1.33975%, 46.5798% 0.60307%, 48.26352% 0.15192%, 50% 0%, 51.73648% 0.15192%, 53.4202% 0.60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);

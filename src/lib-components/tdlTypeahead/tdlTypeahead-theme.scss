@@ -1,0 +1,11 @@
+.THEME_NAME {
+  &.md-input-container.tdl-typeahead {
+    &.has-only-item {
+      &.md-input-disabled {
+        &:after {
+          background-color: #{'BACKGROUND-INVERTED-0.12'} !important;
+        }
+      }
+    }
+  }
+}

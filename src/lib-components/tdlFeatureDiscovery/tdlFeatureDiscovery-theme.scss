@@ -1,0 +1,18 @@
+.THEME_NAME {
+  &.tdl-feature-discovery {
+    .tap-target {
+      background-color: #{'BACKGROUND-ELEVATION_3-0.96'} !important;
+      color: #{'TEXT-TITLE'};
+
+      h1, h2, h3, h4, h5 {
+        color: #{'ACCENT-PRIMARY'};
+      }
+    }
+
+    .tap-target-wave {
+      &::before, &::after {
+        background-color: #{'BACKGROUND-ELEVATION_1'};
+      }
+    }
+  }
+}

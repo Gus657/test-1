@@ -1,0 +1,62 @@
+.THEME_NAME {
+  &.tdl-drawer {
+    header {
+      .md-toolbar {
+        background-color: #{'BACKGROUND-ELEVATION_2'};
+      }
+
+      .tdl-avatar {
+        color: #{'TEXT-TITLE'};
+      }
+    }
+
+    .tdl-drawer-options {
+      .md-list {
+        background-color: #{'BACKGROUND-ELEVATION_2'};
+      }
+
+      ul {
+        li {
+          color: #{'TEXT-TITLE'};
+          &:hover {
+            color: #{'ACCENT-PRIMARY'};
+            background-color: #{'BACKGROUND-INVERTED-0.04'};
+
+            .md-icon {
+              color: #{'ACCENT-PRIMARY'} !important;
+            }
+          }
+        }
+      }
+    }
+
+    a:not(.md-button) {
+      &:hover {
+        color: #{'TEXT-TITLE'};
+      }
+    }
+
+    footer {
+      background-color: #{'BACKGROUND-ELEVATION_2'};
+      color: #{'TEXT-TITLE'};
+
+      .tdl-footer-links {
+        a:not(.md-button) {
+          color: #{'ACCENT-PRIMARY'};
+
+          &:hover {
+            color: #{'RAISED-PRIMARY'}
+          }
+        }
+      }
+    }
+
+    .tdl-spacer {
+      background-color: #{'BACKGROUND-ELEVATION_2'};
+    }
+
+    .tdl-divider {
+      border-top: 1px solid #{'TEXT-DISABLED'};
+    }
+  }
+}

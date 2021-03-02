@@ -1,0 +1,46 @@
+@import '../../core/stylesheets/variables.scss';
+
+$icon-size: 24px;
+$badge-size: 12px;
+
+@mixin icon-size($size: $icon-size) {
+  width: $size;
+  min-width: $size;
+  height: $size;
+  min-height: $size;
+}
+
+.md-icon {
+  @include icon-size(var(--size));
+  position: relative;
+  margin: auto;
+  display: inline-flex !important;
+  align-items: center;
+  text-rendering: optimizeLegibility;
+  vertical-align: middle;
+  fill: var(--icon-color);
+  
+  svg {
+    width: var(--size);
+    height: auto;
+  }
+
+  &__badge {
+    position: absolute;
+    top: -$badge-size/2;
+    right: -$badge-size/2;
+    width: $badge-size;
+    height: $badge-size;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 7px;
+    font-style: normal;
+    line-height: $badge-size;
+    font-family: $font-muli;
+  }
+}
+
+img.md-icon {
+  user-select: none;
+  -webkit-user-drag: none;
+}

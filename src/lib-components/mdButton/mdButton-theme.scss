@@ -1,0 +1,122 @@
+.THEME_NAME {
+  &.md-button:not([disabled]) {
+    &:hover {
+      background-color: #{'BACKGROUND-INVERTED-0.15'};
+    }
+
+    &.md-raised {
+      &:not(.md-icon-button) {
+        color: #{'TEXT-TITLE'};
+        background-color: #{'COMPONENT-BUTTON'};
+
+        &:hover {
+          background-color: #{'COMPONENT-BUTTON'};
+        }
+      }
+
+      &.md-icon-button:not(.md-raised) {
+        color: #{'TEXT-TITLE'};
+      }
+    }
+
+    &.md-fab {
+      color: #{'TEXT-ACCENT_TITLE'};
+      background-color: #{'ACCENT-SECONDARY'};
+
+      &:hover {
+        background-color: #{'RAISED-SECONDARY'};
+      }
+
+      &.md-clean {
+        color: #{'TEXT-TITLE'};
+        background-color: #{'COMPONENT-BUTTON'};
+
+        &:hover {
+          background-color: #{'COMPONENT-BUTTON'};
+        }
+      }
+    }
+
+    &.md-primary {
+      &:not(.md-icon-button) {
+        color: #{'ACCENT-PRIMARY'};
+      }
+
+      &.md-raised,
+      &.md-fab {
+        background-color: #{'ACCENT-PRIMARY'};
+        color: #{'TEXT-ACCENT_TITLE'};
+
+        &:hover {
+          background-color: #{'RAISED-PRIMARY'};
+        }
+      }
+
+      &.md-icon-button:not(.md-raised) {
+        color: #{'ACCENT-PRIMARY'};
+      }
+
+      &[md-theme=inverted] {
+        background-color: #{'COMPONENT-BUTTON'};
+        color: #{'ACCENT-PRIMARY'};
+
+        &:hover {
+          background-color: #{'COMPONENT-BUTTON'};
+        }
+      }
+    }
+
+    &.md-accent {
+      &:not(.md-icon-button) {
+        color: #{'ACCENT-SECONDARY'};
+      }
+
+      &.md-raised {
+        background-color: #{'ACCENT-SECONDARY'};
+        color: #{'TEXT-ACCENT_TITLE'};
+
+        &:hover {
+          background-color: #{'RAISED-SECONDARY'};
+        }
+      }
+
+      &.md-icon-button:not(.md-raised) {
+        color: #{'ACCENT-SECONDARY'};
+      }
+    }
+
+    &.md-warn {
+      &:not(.md-icon-button) {
+        color: #{'ACCENT-WARN'};
+      }
+
+      &.md-raised,
+      &.md-fab {
+        background-color: #{'ACCENT-WARN'};
+        color: #{'TEXT-ACCENT_TITLE'};
+
+        &:hover {
+          background-color: #{'RAISED-WARN'};
+        }
+      }
+
+      &.md-icon-button:not(.md-raised) {
+        color: #{'ACCENT-WARN'};
+      }
+    }
+  }
+
+  &.md-button[disabled] {
+    color: #{'TEXT-DISABLED'};
+
+    &.md-raised,
+    &.md-fab {
+      background-color: #{'BACKGROUND-INVERTED-0.12'};
+    }
+  }
+
+  &.md-button .md-button__badge {
+    background-color: #{'COMPONENT-BADGE'};
+    color: #{'COMPONENT-TEXT'};
+  }
+}

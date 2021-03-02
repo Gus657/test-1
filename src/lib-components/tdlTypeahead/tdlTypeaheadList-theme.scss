@@ -1,0 +1,25 @@
+.THEME_NAME {
+  &.typeahead-list__item-list--active {
+    .md-highlighted {
+      .md-button:not([disabled]) {
+        background-color: #{'BACKGROUND-INVERTED-0.12'};
+      }
+    }
+  }
+
+  .typeahead-list__results-item--selectable {
+    background-color: #{'ACCENT-PRIMARY-0.12'};
+  }
+
+  &.typeahead-list {
+    &__search-hint {
+      color: #{'BACKGROUND-INVERTED-0.30'} !important;
+    }
+
+    &__item-list {
+      .typeahead-list__results-item.md-disabled {
+        color: #{'TEXT-DISABLED'};
+      }
+    }
+  }
+}

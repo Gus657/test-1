@@ -1,0 +1,108 @@
+.THEME_NAME {
+  &.md-bottom-bar {
+    &.md-fixed {
+      background-color: #{'BACKGROUND-ELEVATION_2'};
+
+      .md-bottom-bar-item {
+        color: #{'TEXT-DEFAULT'};
+
+        &:hover:not([disabled]):not(.md-active) {
+          color: #{'TEXT-TITLE'};
+        }
+
+        &.md-active {
+          color: #{'ACCENT-PRIMARY'};
+        }
+      }
+
+      &.md-accent {
+        .md-bottom-bar-item {
+          &.md-active {
+            color: #{'ACCENT-SECONDARY'};
+          }
+        }
+      }
+
+      &.md-warn {
+        .md-bottom-bar-item {
+          &.md-active {
+            color: #{'ACCENT-WARN'};
+          }
+        }
+      }
+
+      &.md-transparent {
+        .md-bottom-bar-item {
+          &.md-active {
+            color: #{'TEXT-DEFAULT'};
+          }
+        }
+      }
+    }
+
+    &.md-shift {
+      background-color: #{'ACCENT-PRIMARY'};
+      color: #{'TEXT-ACCENT_DEFAULT'};
+
+      .md-bottom-bar-item {
+        color: #{'TEXT-ACCENT_DEFAULT'};
+
+        &:hover:not([disabled]):not(.md-active) {
+          color: #{'TEXT-ACCENT_TITLE'};
+        }
+
+        &.md-active {
+          color: #{'TEXT-ACCENT_TITLE'};
+        }
+      }
+
+      &.md-accent {
+        background-color: #{'ACCENT-SECONDARY'};
+
+        .md-bottom-bar-item {
+          color: #{'TEXT-ACCENT_DEFAULT'};
+
+          &:hover:not([disabled]):not(.md-active) {
+            color: #{'TEXT-ACCENT_TITLE'};
+          }
+
+          &.md-active {
+            color: #{'TEXT-ACCENT_TITLE'};
+          }
+        }
+      }
+
+      &.md-warn {
+        background-color: #{'ACCENT-WARN'};
+
+        .md-bottom-bar-item {
+          color: #{'TEXT-ACCENT_DEFAULT'};
+
+          &:hover:not([disabled]):not(.md-active) {
+            color: #{'TEXT-ACCENT_TITLE'};
+          }
+
+          &.md-active {
+            color: #{'TEXT-ACCENT_TITLE'};
+          }
+        }
+      }
+
+      &.md-transparent {
+        background-color: transparent;
+
+        .md-bottom-bar-item {
+          color: #{'TEXT-DEFAULT'};
+
+          &:hover:not([disabled]):not(.md-active) {
+            color: #{'TEXT-TITLE'};
+          }
+
+          &.md-active {
+            color: #{'TEXT-TITLE'};
+          }
+        }
+      }
+    }
+  }
+}

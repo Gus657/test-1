@@ -1,0 +1,48 @@
+@import '../../core/stylesheets/variables.scss';
+
+$button-radius: 2px;
+
+.md-button-toggle {
+  width: auto;
+  display: flex;
+
+  .md-button {
+    margin: 0;
+    overflow: hidden;
+    border-width: 1px 0 1px 1px;
+    border-radius: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:after {
+      width: 1px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      content: " ";
+    }
+
+    &:first-child {
+      border-radius: 2px 0 0 2px;
+    }
+
+    &:last-child {
+      border-right-width: 1px;
+      border-radius: 0 2px 2px 0;
+    }
+
+    .md-ink-ripple {
+      border-radius: $button-radius;
+    }
+
+    &:not(.md-raised):not(.md-toggle):not([disabled]):hover {
+      text-decoration: none;
+    }
+  }
+
+  &.md-raised button:not([disabled]) {
+    box-shadow: $material-shadow-2dp;
+  }
+}

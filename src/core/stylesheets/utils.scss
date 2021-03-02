@@ -1,0 +1,22 @@
+@mixin icon-size($size) {
+  min-width: $size;
+  width: $size;
+  min-height: $size;
+  height: $size;
+  font-size: $size;
+}
+
+@mixin remove-scrollbar() {
+  // Remove the default scrollbar in Firefox
+  scrollbar-width: none;
+
+  // Remove the default scrollbar for WebKit implementations
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tdl-lazy-loader-hide-background-image {
+  background-image: none !important;
+  top: 0px !important;
+}

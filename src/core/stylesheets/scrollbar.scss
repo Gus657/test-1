@@ -1,0 +1,36 @@
+@import 'variables.scss';
+
+.md-scrollbar {
+  &::-webkit-scrollbar,
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    box-shadow: inset 1px 1px 0 $black-opacity-12;
+    transition: $swift-ease-in-out;
+    background-color: $black-opacity-5;
+
+    &:hover {
+      box-shadow: inset 1px 1px 0 $black-opacity-54,
+                  inset 0 -1px 0 $black-opacity-38;
+      background-color: $black-opacity-87;
+    }
+  }
+
+  &::-webkit-scrollbar-button,
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-corner,
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb {
+    background-color: $black-opacity-26;
+    box-shadow: inset 1px 1px 0 $black-opacity-54,
+                inset 0 -1px 0 $black-opacity-87;
+    transition: $swift-ease-in-out;
+  }
+}

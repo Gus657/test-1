@@ -1,0 +1,11 @@
+.THEME_NAME {
+  &.tdl-interstitial {
+    &__content {
+      background-color: #{'BACKGROUND-ELEVATION_1'};
+    }
+
+    &__header {
+      background-color: #{'BACKGROUND-ELEVATION_2'};
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.THEME_NAME {
+  &.tdl-app-bar {
+    .md-toolbar {
+      background-color: #{'COMPONENT-APPBAR'} !important;
+      color: #{'TEXT-DEFAULT'};
+    }
+
+    .tdl-app-bar__tools .tools__tool {
+      .tools__name, .tools__icon {
+        color: #{'TEXT-DEFAULT'};
+      }
+    }
+
+    .tdl-toolbar .tdl-divider {
+      border-top: 1px solid #{'BACKGROUND-INVERTED-0.12'};
+    }
+  }
+
+  &.user-menu__user .user__content .user__name {
+    color: #{'ACCENT-PRIMARY'} !important;
+  }
+
+  &.user-menu__actions .user-menu__action--secondary {
+    color: #{'ACCENT-PRIMARY'} !important;
+  }
+}

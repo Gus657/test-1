@@ -1,0 +1,55 @@
+.THEME_NAME {
+  &.md-stepper {
+    .md-step-header {
+      .md-step-icon,
+      .md-step-number {
+        color: #{'TEXT-TITLE'};
+        background-color: #{'TEXT-DISABLED'};
+      }
+      &.md-primary, &.md-active {
+        .md-step-icon,
+        .md-step-number {
+          color: #{'TEXT-ACCENT_TITLE'};
+          background-color: #{'ACCENT-PRIMARY'};
+        }
+      }
+      &.md-accent {
+        .md-step-icon,
+        .md-step-number {
+          color: #{'TEXT-ACCENT_TITLE'};
+          background-color: #{'ACCENT-SECONDARY'};
+        }
+      }
+      &.md-warn {
+        .md-step-icon,
+        .md-step-number {
+          color: #{'TEXT-ACCENT_TITLE'};
+          background-color: #{'ACCENT-WARN'};
+        }
+
+        .md-step-error,
+        .md-step-titles{
+          color: #{'ACCENT-WARN'};
+        }
+      }
+      &.md-disabled {
+        color: #bdbdbd;
+        .md-step-icon,
+        .md-step-number {
+          color: #{'TEXT-TITLE'};
+          background-color: #{'TEXT-DISABLED'};
+        }
+      }
+    }
+
+    .md-steps-vertical-container {
+      .md-step {
+        &:not(:last-of-type) {
+          .md-step-content {
+            border-left: 1px solid #{'TEXT-DISABLED'};
+          }
+        }
+      }
+    }
+  }
+}

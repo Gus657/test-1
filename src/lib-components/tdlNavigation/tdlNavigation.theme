@@ -1,0 +1,20 @@
+.THEME_NAME {
+  &.md-bottom-bar {
+    &.md-fixed {
+      background-color: #{'ACCENT-PRIMARY'};
+      color: #{'TEXT-ACCENT_TITLE'};
+
+      .md-bottom-bar-item {
+        color: #{'TEXT-ACCENT_DEFAULT'};
+
+        &:hover:not([disabled]):not(.md-active) {
+          color: #{'TEXT-ACCENT_TITLE'};
+        }
+
+        &.md-active {
+          color: #{'TEXT-ACCENT_TITLE'};
+        }
+      }
+    }
+  }
+}
